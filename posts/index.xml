@@ -1,14 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gerrit</title><link>https://gerrited.github.io/posts/</link><description>Recent content in Posts on Gerrit</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Sat, 08 Jan 2022 18:37:38 +0100</lastBuildDate><atom:link href="https://gerrited.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberry Pi Cluster mit k3s</title><link>https://gerrited.github.io/posts/2022/01/raspberry-pi-cluster-mit-k3s/</link><pubDate>Sat, 08 Jan 2022 18:37:38 +0100</pubDate><guid>https://gerrited.github.io/posts/2022/01/raspberry-pi-cluster-mit-k3s/</guid><description>Anfang 2020 habe ich mir folgendes gekauft:
-4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM) 4 x SanDisk Ultra MicroSDHC 32GB RPI CASE TR 19 (transparent Gehäuse für mehrere Raspberry Pi 4) Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports diverse USB und LAN Kabel Der Gesamtpreis belief sich auf ca. 300€. Mein Ziel war es, mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können.</description><content type="html"><![CDATA[<p>Anfang 2020 habe ich mir folgendes gekauft:</p>
+4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM) 4 x SanDisk Ultra MicroSDHC 32GB RPI CASE TR 19 (transparent Gehäuse für mehrere Raspberry Pi) tp-link 5-Port Gigabit Switch Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports diverse USB und LAN Kabel Der Gesamtpreis belief sich auf ca. 300€. Mein Ziel war es, mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können.</description><content type="html"><![CDATA[<p>Anfang 2020 habe ich mir folgendes gekauft:</p>
 <ul>
 <li>4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM)</li>
 <li>4 x  SanDisk Ultra MicroSDHC 32GB</li>
-<li>RPI CASE TR 19 (transparent Gehäuse für mehrere Raspberry Pi 4)</li>
+<li>RPI CASE TR 19 (transparent Gehäuse für mehrere Raspberry Pi)</li>
+<li>tp-link 5-Port Gigabit Switch</li>
 <li>Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports</li>
 <li>diverse USB und LAN Kabel</li>
 </ul>
 <p>Der Gesamtpreis belief sich auf ca. 300€. Mein Ziel war es, mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können.</p>
-<p>
 
 
 
@@ -33,24 +33,6 @@
 
 
 
-<img
-  
-  
-  sizes="(min-width: 35em) 720px, 100vw"
-  srcset='
-  
-    /img/002-raspberry-pi-001_hud16d612c330b04dcdb106e49d4a31f27_597464_500x0_resize_q75_box.jpg 500w
-  
-  
-    , /img/002-raspberry-pi-001_hud16d612c330b04dcdb106e49d4a31f27_597464_800x0_resize_q75_box.jpg 800w
-  
-  
-    , /img/002-raspberry-pi-001_hud16d612c330b04dcdb106e49d4a31f27_597464_1200x0_resize_q75_box.jpg 1200w
-  '
-  
-    src="/img/002-raspberry-pi-001.jpg"
-  
-  alt="Raspberry Pi Lieferung #1">
 
 
 
@@ -64,135 +46,93 @@
 
 
 
+  	
+	
 
+	
+	
+	
+		<script src="/shortcode-gallery/lazy/jquery.lazy.min.js"></script>
+	
 
+	<script src="/shortcode-gallery/swipebox/js/jquery.swipebox.min.js"></script>
+	<link rel="stylesheet" href="/shortcode-gallery/swipebox/css/swipebox.min.css">
 
+	<script src="/shortcode-gallery/justified_gallery/jquery.justifiedGallery.min.js"></script>
+	<link rel="stylesheet" href="/shortcode-gallery/justified_gallery/justifiedGallery.min.css"/>
 
 
+<style>
+	
 
+	
+</style>
 
 
 
 
 
+<div id="gallery-d42eeebd17c3fa31e82df8a2570b7f3b-0-wrapper" class="gallery-wrapper">
+<div id="gallery-d42eeebd17c3fa31e82df8a2570b7f3b-0" class="justified-gallery">
+	
+</div>
+</div>
 
+<script>
+	if (!jQuery) {
+		alert("jquery is not loaded");
+	}
 
+	$( document ).ready(() => {
+		const gallery = $("#gallery-d42eeebd17c3fa31e82df8a2570b7f3b-0");
+		
 
-<img
-  
-  
-  sizes="(min-width: 35em) 720px, 100vw"
-  srcset='
-  
-    /img/002-raspberry-pi-002_hu5ac38d9ac6a6b34ee8299118fdb62090_543435_500x0_resize_q75_box.jpg 500w
-  
-  
-    , /img/002-raspberry-pi-002_hu5ac38d9ac6a6b34ee8299118fdb62090_543435_800x0_resize_q75_box.jpg 800w
-  
-  
-    , /img/002-raspberry-pi-002_hu5ac38d9ac6a6b34ee8299118fdb62090_543435_1200x0_resize_q75_box.jpg 1200w
-  '
-  
-    src="/img/002-raspberry-pi-002.jpg"
-  
-  alt="Raspberry Pi Lieferung #2">
+		
+		let swipeboxInstance = null;
 
+		
+		
+		gallery.on('jg.complete', () => {
+			
+				
+				
+				$(() => {
+					$('.lazy').Lazy({
+						visibleOnly: true,
+						afterLoad: element => element.css({filter: "none", transition: "filter 1.0s ease-in-out"})
+					});
+				});
+			
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img
-  
-  
-  sizes="(min-width: 35em) 720px, 100vw"
-  srcset='
-  
-    /img/002-raspberry-pi-003_huc72feebf5acab0c20e36d737068512a2_525357_500x0_resize_q75_box.jpg 500w
-  
-  
-    , /img/002-raspberry-pi-003_huc72feebf5acab0c20e36d737068512a2_525357_800x0_resize_q75_box.jpg 800w
-  
-  
-    , /img/002-raspberry-pi-003_huc72feebf5acab0c20e36d737068512a2_525357_1200x0_resize_q75_box.jpg 1200w
-  '
-  
-    src="/img/002-raspberry-pi-003.jpg"
-  
-  alt="Raspberry Pi Lieferung #3">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img
-  
-  
-  sizes="(min-width: 35em) 720px, 100vw"
-  srcset='
-  
-    /img/002-raspberry-pi-004_huc61670b560c1098ac9137fe6a057f363_444592_500x0_resize_q75_box.jpg 500w
-  
-  
-    , /img/002-raspberry-pi-004_huc61670b560c1098ac9137fe6a057f363_444592_800x0_resize_q75_box.jpg 800w
-  
-  
-    , /img/002-raspberry-pi-004_huc61670b560c1098ac9137fe6a057f363_444592_1200x0_resize_q75_box.jpg 1200w
-  '
-  
-    src="/img/002-raspberry-pi-004.jpg"
-  
-  alt="Raspberry Pi Lieferung #4">
-
-</p>
-<p>Bei der Installation nutzte hauptsächlich den Blogpost <a href="https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/">&ldquo;Will it cluster? k3s on your Raspberry Pi&rdquo; von Alex Ellis</a> (auch wenn sich mittlerweile einige Details geändert haben, bietet die Anleitung weiterhin eine gute Grundlage) und nachdem es einen 64 bit arm Support gab, änderte ich die Plattform via</p>
+			swipeboxInstance = $('.galleryImg').swipebox(
+				jQuery.extend({},
+					{  }
+				)
+			);
+		});
+
+		
+		gallery.justifiedGallery({
+			rowHeight : "150",
+			margins : "5",
+			border : 0,
+			waitThumbnailsLoad : false,
+			lastRow : "justify",
+			captions : false,
+			
+			
+		});
+
+		
+		
+	});
+</script>
+
+<p>Ich hatte mich schon vor der Bestellung für k3s (ein &ldquo;Lightweight Kubernetes&rdquo;) entschieden, weil es dazu viele Infos gab und ich bereits erfolgreich auf einem Raspberry Pi ausprobiert hatte. Während der Einrichtung orientierte ich mich hauptsächlich am Blogpost <a href="https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/">&ldquo;Will it cluster? k3s on your Raspberry Pi&rdquo; von Alex Ellis</a>, welcher weiterhin eine gute Grundlage bietet sollte, auch wenn sich mittlerweile einige Details geändert haben. Zusätzlich aktivierte ich noch den <a href="https://www.raspberrypi.com/documentation/computers/config_txt.html#arm_64bit">64 bit Kernel</a> in der config.txt.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rpi-update
 nano /boot/config.txt <span style="color:#75715e"># change arm_64bit=0 to arm_64bit=1</span>
 reboot</code></pre></div>
-<p>Es werden weitere Posts über Raspberry Pi und k3s folgen. Beispielsweise zeige ich eine Alternative zu <a href="https://inlets.dev/">inlets</a>, die via cloudflare und Argo Tunnel umgesetzt ist.</p>
+<p>Demnächst werden weitere Posts über Raspberry Pi und k3s folgen. Beispielsweise zeige ich eine Alternative zu <a href="https://inlets.dev/">inlets</a>, die via cloudflare und Argo Tunnel umgesetzt ist.</p>
 ]]></content></item><item><title>Happy New Year</title><link>https://gerrited.github.io/posts/2022/01/happy-new-year/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://gerrited.github.io/posts/2022/01/happy-new-year/</guid><description>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.
 Weiteres zu mir und dem Blog unter About</description><content type="html"><![CDATA[<p>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.</p>
 <p>Weiteres zu mir und dem Blog unter <a href="https://gerrited.github.io/about/">About</a></p>
