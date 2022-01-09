@@ -1,10 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gerrit</title><link>https://gerrited.github.io/posts/</link><description>Recent content in Posts on Gerrit</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Sat, 08 Jan 2022 18:37:38 +0100</lastBuildDate><atom:link href="https://gerrited.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Raspberry Pi Cluster mit k3s</title><link>https://gerrited.github.io/posts/2022/01/raspberry-pi-cluster-mit-k3s/</link><pubDate>Sat, 08 Jan 2022 18:37:38 +0100</pubDate><guid>https://gerrited.github.io/posts/2022/01/raspberry-pi-cluster-mit-k3s/</guid><description>Anfang 2020 habe ich mir folgendes gekauft:
-4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM) 4 x SanDisk Ultra MicroSDHC 32GB RPI CASE TR 19 (transparent Gehäuse für mehrere Raspberry Pi) tp-link 5-Port Gigabit Switch Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports diverse USB und LAN Kabel Der Gesamtpreis belief sich auf ca. 300€. Mein Ziel war es, mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können.</description><content type="html"><![CDATA[<p>Anfang 2020 habe ich mir folgendes gekauft:</p>
+4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM) 4 x SanDisk Ultra MicroSDHC 32GB RPI CASE TR 19 (transparentes Gehäuse für mehrere Raspberry Pi) TP-Link 5-Port Gigabit Switch Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports diverse USB und LAN Kabel Der Gesamtpreis belief sich auf ca. 300€. Mein Ziel war es, mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können.</description><content type="html"><![CDATA[<p>Anfang 2020 habe ich mir folgendes gekauft:</p>
 <ul>
 <li>4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM)</li>
 <li>4 x  SanDisk Ultra MicroSDHC 32GB</li>
-<li>RPI CASE TR 19 (transparent Gehäuse für mehrere Raspberry Pi)</li>
-<li>tp-link 5-Port Gigabit Switch</li>
+<li>RPI CASE TR 19 (transparentes Gehäuse für mehrere Raspberry Pi)</li>
+<li>TP-Link 5-Port Gigabit Switch</li>
 <li>Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports</li>
 <li>diverse USB und LAN Kabel</li>
 </ul>
@@ -12,6 +12,8 @@
 
 
 
+
+	
 
 
 
@@ -52,8 +54,6 @@
 	
 	
 	
-		<script src="/shortcode-gallery/lazy/jquery.lazy.min.js"></script>
-	
 
 	<script src="/shortcode-gallery/swipebox/js/jquery.swipebox.min.js"></script>
 	<link rel="stylesheet" href="/shortcode-gallery/swipebox/css/swipebox.min.css">
@@ -72,8 +72,254 @@
 
 
 
-<div id="gallery-d42eeebd17c3fa31e82df8a2570b7f3b-0-wrapper" class="gallery-wrapper">
-<div id="gallery-d42eeebd17c3fa31e82df8a2570b7f3b-0" class="justified-gallery">
+<div id="gallery-a01f0794cbfa5f6cc59d7ef1be9a4533-0-wrapper" class="gallery-wrapper">
+<div id="gallery-a01f0794cbfa5f6cc59d7ef1be9a4533-0" class="justified-gallery">
+	
+		
+		
+				
+			
+			
+			
+				
+			
+
+			
+			
+				
+					
+				
+			
+
+
+			
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+			
+
+			
+			
+
+
+			<div>
+				
+				
+					
+				
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-005.jpg" 
+					class="galleryImg"
+					
+						
+
+						
+							data-description=" + <br/>mm f/ sec ISO "
+						
+
+						
+					
+					>
+					<img			
+						width="450" height="600"
+
+						
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-005_hu7f8882d7b129638a807126d77a89def0_470144_600x600_fit_q90_lanczos.jpg"
+						
+
+						
+							
+						
+					>
+				</a>
+			</div>
+		
+	
+		
+		
+				
+			
+			
+			
+				
+			
+
+			
+			
+				
+			
+
+
+			
+			
+			
+
+			
+			
+
+
+			<div>
+				
+				
+					
+				
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-004.jpg" 
+					class="galleryImg"
+					
+					>
+					<img			
+						width="450" height="600"
+
+						
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-004_huda82d5597805dd095113ffbad5b0b7bf_444490_600x600_fit_q90_lanczos.jpg"
+						
+
+						
+					>
+				</a>
+			</div>
+		
+	
+		
+		
+				
+			
+			
+			
+				
+			
+
+			
+			
+				
+			
+
+
+			
+			
+			
+
+			
+			
+
+
+			<div>
+				
+				
+					
+				
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-003.jpg" 
+					class="galleryImg"
+					
+					>
+					<img			
+						width="450" height="600"
+
+						
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-003_hua080a8dbf0a1f20d00daec3557c205a9_525255_600x600_fit_q90_lanczos.jpg"
+						
+
+						
+					>
+				</a>
+			</div>
+		
+	
+		
+		
+				
+			
+			
+			
+				
+			
+
+			
+			
+				
+			
+
+
+			
+			
+			
+
+			
+			
+
+
+			<div>
+				
+				
+					
+				
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-002.jpg" 
+					class="galleryImg"
+					
+					>
+					<img			
+						width="600" height="450"
+
+						
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-002_hu5ac38d9ac6a6b34ee8299118fdb62090_543435_600x600_fit_q90_lanczos.jpg"
+						
+
+						
+					>
+				</a>
+			</div>
+		
+	
+		
+		
+				
+			
+			
+			
+				
+			
+
+			
+			
+				
+			
+
+
+			
+			
+			
+
+			
+			
+
+
+			<div>
+				
+				
+					
+				
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-001.jpg" 
+					class="galleryImg"
+					
+					>
+					<img			
+						width="600" height="450"
+
+						
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-001_hud16d612c330b04dcdb106e49d4a31f27_597464_600x600_fit_q90_lanczos.jpg"
+						
+
+						
+					>
+				</a>
+			</div>
+		
 	
 </div>
 </div>
@@ -84,7 +330,7 @@
 	}
 
 	$( document ).ready(() => {
-		const gallery = $("#gallery-d42eeebd17c3fa31e82df8a2570b7f3b-0");
+		const gallery = $("#gallery-a01f0794cbfa5f6cc59d7ef1be9a4533-0");
 		
 
 		
@@ -93,15 +339,6 @@
 		
 		
 		gallery.on('jg.complete', () => {
-			
-				
-				
-				$(() => {
-					$('.lazy').Lazy({
-						visibleOnly: true,
-						afterLoad: element => element.css({filter: "none", transition: "filter 1.0s ease-in-out"})
-					});
-				});
 			
 
 			swipeboxInstance = $('.galleryImg').swipebox(
