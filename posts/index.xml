@@ -52,6 +52,8 @@
 	
 
 	
+		<script src="/shortcode-gallery/jquery-3.6.0.min.js"></script>
+	
 	
 	
 
@@ -87,72 +89,6 @@
 			
 			
 				
-					
-				
-			
-
-
-			
-			
-			
-				
-				
-				
-				
-				
-				
-				
-				
-			
-
-			
-			
-
-
-			<div>
-				
-				
-					
-				
-				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-005.jpg" 
-					class="galleryImg"
-					
-						
-
-						
-							data-description=" + <br/>mm f/ sec ISO "
-						
-
-						
-					
-					>
-					<img			
-						width="450" height="600"
-
-						
-							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-005_hu7f8882d7b129638a807126d77a89def0_470144_600x600_fit_q90_lanczos.jpg"
-						
-
-						
-							
-						
-					>
-				</a>
-			</div>
-		
-	
-		
-		
-				
-			
-			
-			
-				
-			
-
-			
-			
-				
 			
 
 
@@ -169,60 +105,15 @@
 				
 					
 				
-				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-004.jpg" 
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-001.jpg" 
 					class="galleryImg"
 					
 					>
 					<img			
-						width="450" height="600"
+						width="600" height="450"
 
 						
-							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-004_huda82d5597805dd095113ffbad5b0b7bf_444490_600x600_fit_q90_lanczos.jpg"
-						
-
-						
-					>
-				</a>
-			</div>
-		
-	
-		
-		
-				
-			
-			
-			
-				
-			
-
-			
-			
-				
-			
-
-
-			
-			
-			
-
-			
-			
-
-
-			<div>
-				
-				
-					
-				
-				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-003.jpg" 
-					class="galleryImg"
-					
-					>
-					<img			
-						width="450" height="600"
-
-						
-							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-003_hua080a8dbf0a1f20d00daec3557c205a9_525255_600x600_fit_q90_lanczos.jpg"
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-001_hud16d612c330b04dcdb106e49d4a31f27_597464_600x600_fit_q90_lanczos.jpg"
 						
 
 						
@@ -304,17 +195,126 @@
 				
 					
 				
-				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-001.jpg" 
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-003.jpg" 
 					class="galleryImg"
 					
 					>
 					<img			
-						width="600" height="450"
+						width="450" height="600"
 
 						
-							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-001_hud16d612c330b04dcdb106e49d4a31f27_597464_600x600_fit_q90_lanczos.jpg"
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-003_hua080a8dbf0a1f20d00daec3557c205a9_525255_600x600_fit_q90_lanczos.jpg"
 						
 
+						
+					>
+				</a>
+			</div>
+		
+	
+		
+		
+				
+			
+			
+			
+				
+			
+
+			
+			
+				
+			
+
+
+			
+			
+			
+
+			
+			
+
+
+			<div>
+				
+				
+					
+				
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-004.jpg" 
+					class="galleryImg"
+					
+					>
+					<img			
+						width="450" height="600"
+
+						
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-004_huda82d5597805dd095113ffbad5b0b7bf_444490_600x600_fit_q90_lanczos.jpg"
+						
+
+						
+					>
+				</a>
+			</div>
+		
+	
+		
+		
+				
+			
+			
+			
+				
+			
+
+			
+			
+				
+					
+				
+			
+
+
+			
+			
+			
+				
+				
+				
+				
+				
+				
+				
+				
+			
+
+			
+			
+
+
+			<div>
+				
+				
+					
+				
+				<a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-005.jpg" 
+					class="galleryImg"
+					
+						
+
+						
+
+						
+					
+					>
+					<img			
+						width="450" height="600"
+
+						
+							src="/posts/2022/01/raspberry-pi-cluster-mit-k3s/raspberry-pi-005_hu7f8882d7b129638a807126d77a89def0_470144_600x600_fit_q90_lanczos.jpg"
+						
+
+						
+							
 						
 					>
 				</a>
@@ -350,8 +350,8 @@
 
 		
 		gallery.justifiedGallery({
-			rowHeight : "150",
-			margins : "5",
+			rowHeight : "200",
+			margins : "10",
 			border : 0,
 			waitThumbnailsLoad : false,
 			lastRow : "justify",
