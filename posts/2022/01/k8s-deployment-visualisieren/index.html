@@ -29,7 +29,7 @@ K8s Deployment visualisieren :: Gerrit
 Demo   Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Labels blinkt und blinktColor von Pods reagiert. Damit die LEDs angesteuert werden können, laufen die Pods als cluster-admin. Weiteres unter &ldquo;How it works&rdquo; auf GitHub.
 Vorbereitung In dem Video ist der Controller bereits eingerichtet."><meta itemprop=datePublished content="2022-01-10T07:24:32+01:00">
 <meta itemprop=dateModified content="2022-01-10T07:24:32+01:00">
-<meta itemprop=wordCount content="204"><meta itemprop=image content="https://gerrited.github.io">
+<meta itemprop=wordCount content="207"><meta itemprop=image content="https://gerrited.github.io">
 <meta itemprop=keywords content="raspberry-pi,k3s,">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://gerrited.github.io">
@@ -87,10 +87,13 @@ One minute
 <p>In dem Video ist der Controller bereits eingerichtet. Zusätzlich verwende ich diese beiden Manifests:</p>
 <script type=application/javascript src=https://gist.github.com/gerrited/c9691d8dc4be346038c5f4908a9a2adf.js></script>
 <h1 id=ablauf>Ablauf</h1>
+<h2 id=deploy>Deploy</h2>
 <p>Zuerst wird das Deployment &ldquo;green&rdquo; durchgeführt. Dadurch werden die 16 grünen Pods gleichmäßig auf die 4 Nodes verteilt.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>kubectl apply -f hello-blinkt-controller-green.yml</code></pre></div>
+<h2 id=update>Update</h2>
 <p>Sobald das Deployment erfolgreich war, wird das Deployment auf &ldquo;blue&rdquo; geändert. Kubernetes prüft dann erstmal vorsichtig, ob das Deployment in Ordnung ist. In dieser Übergangsphase sind sowohl grüne als auch blaue Pods aktiv. Wenn die neue Version des Deployments erfolgreich geprüft wurde, ersetzen weitere blaue Pods die alten grünen Pods.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>kubectl apply -f hello-blinkt-controller-blue.yml</code></pre></div>
+<h2 id=delete>Delete</h2>
 <p>Anschließend wird das Deployment gelöscht. Auch hier geht K8s schrittweise vor und entfernt nacheinander die einzelnen Pods.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>kubectl delete -f hello-blinkt-controller-blue.yml</code></pre></div>
 <h1 id=fazit>Fazit</h1>
@@ -107,7 +110,7 @@ One minute
 <span class=tag><a href=https://gerrited.github.io/categories/how-to/>how-to</a></span>
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-204 Words
+207 Words
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
 2022-01-10 06:24

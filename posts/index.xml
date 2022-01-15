@@ -15,10 +15,13 @@ Vorbereitung In dem Video ist der Controller bereits eingerichtet.</description>
 <script type="application/javascript" src="https://gist.github.com/gerrited/c9691d8dc4be346038c5f4908a9a2adf.js"></script>
 
 <h1 id="ablauf">Ablauf</h1>
+<h2 id="deploy">Deploy</h2>
 <p>Zuerst wird das Deployment &ldquo;green&rdquo; durchgeführt. Dadurch werden die 16 grünen Pods gleichmäßig auf die 4 Nodes verteilt.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f hello-blinkt-controller-green.yml</code></pre></div>
+<h2 id="update">Update</h2>
 <p>Sobald das Deployment erfolgreich war, wird das Deployment auf &ldquo;blue&rdquo; geändert. Kubernetes prüft dann erstmal vorsichtig, ob das Deployment in Ordnung ist. In dieser Übergangsphase sind sowohl grüne als auch blaue Pods aktiv. Wenn die neue Version des Deployments erfolgreich geprüft wurde, ersetzen weitere blaue Pods die alten grünen Pods.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f hello-blinkt-controller-blue.yml</code></pre></div>
+<h2 id="delete">Delete</h2>
 <p>Anschließend wird das Deployment gelöscht. Auch hier geht K8s schrittweise vor und entfernt nacheinander die einzelnen Pods.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl delete -f hello-blinkt-controller-blue.yml</code></pre></div>
 <h1 id="fazit">Fazit</h1>
