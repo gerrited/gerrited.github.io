@@ -398,7 +398,53 @@ Vorbereitung In dem Video ist der Controller bereits eingerichtet.</description>
 nano /boot/config.txt <span style="color:#75715e"># change arm_64bit=0 to arm_64bit=1</span>
 reboot</code></pre></div>
 <p>Demnächst werden weitere Posts über Raspberry Pi und k3s folgen. Beispielsweise zeige ich eine Alternative zu <a href="https://inlets.dev/">inlets</a>, die via cloudflare und Argo Tunnel umgesetzt ist.</p>
-]]></content></item><item><title>Happy New Year</title><link>https://gerrited.github.io/posts/2022/01/happy-new-year/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://gerrited.github.io/posts/2022/01/happy-new-year/</guid><description>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.
-Weiteres zu mir und dem Blog unter About</description><content type="html"><![CDATA[<p>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.</p>
+]]></content></item><item><title>Happy New Year and Hello World!</title><link>https://gerrited.github.io/posts/2022/01/happy-new-year-and-hello-world/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://gerrited.github.io/posts/2022/01/happy-new-year-and-hello-world/</guid><description>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.
+Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Also&amp;hellip; &amp;ldquo;Hello World&amp;rdquo; und Happy New Year!
+Weiteres zu mir und dem Blog unter About</description><content type="html"><![CDATA[<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img
+  style='width: 12em; float:right'
+  
+  sizes="(min-width: 35em) 720px, 100vw"
+  srcset='
+  
+    /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_500x0_resize_q75_box.jpg 500w
+  
+  
+    , /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_800x0_resize_q75_box.jpg 800w
+  
+  
+    , /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_1200x0_resize_q75_box.jpg 1200w
+  '
+  
+    src="/img/hello-world.jpg"
+  
+  alt="">
+
+ Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.</p>
+<p>Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Also&hellip; &ldquo;Hello World&rdquo; und Happy New Year!</p>
 <p>Weiteres zu mir und dem Blog unter <a href="https://gerrited.github.io/about/">About</a></p>
 ]]></content></item></channel></rss>
