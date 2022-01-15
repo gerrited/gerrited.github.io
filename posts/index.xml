@@ -399,8 +399,8 @@ nano /boot/config.txt <span style="color:#75715e"># change arm_64bit=0 to arm_64
 reboot</code></pre></div>
 <p>Demnächst werden weitere Posts über Raspberry Pi und k3s folgen. Beispielsweise zeige ich eine Alternative zu <a href="https://inlets.dev/">inlets</a>, die via cloudflare und Argo Tunnel umgesetzt ist.</p>
 ]]></content></item><item><title>Happy New Year and Hello World!</title><link>https://gerrited.github.io/posts/2022/01/happy-new-year-and-hello-world/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://gerrited.github.io/posts/2022/01/happy-new-year-and-hello-world/</guid><description>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.
-Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Also&amp;hellip; &amp;ldquo;Hello World&amp;rdquo; und Happy New Year!
-Weiteres zu mir und dem Blog unter About</description><content type="html"><![CDATA[<p>
+Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach auch zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Irgendwie auch passend.
+Also&amp;hellip; &amp;ldquo;Hello World!&amp;rdquo; und &amp;ldquo;Happy New Year!</description><content type="html"><![CDATA[<p>
 
 
 
@@ -445,6 +445,7 @@ Weiteres zu mir und dem Blog unter About</description><content type="html"><![CD
   alt="">
 
  Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.</p>
-<p>Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Also&hellip; &ldquo;Hello World&rdquo; und Happy New Year!</p>
+<p>Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach auch zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Irgendwie auch passend.</p>
+<p>Also&hellip; &ldquo;Hello World!&rdquo; und &ldquo;Happy New Year!&rdquo;</p>
 <p>Weiteres zu mir und dem Blog unter <a href="https://gerrited.github.io/about/">About</a></p>
 ]]></content></item></channel></rss>
