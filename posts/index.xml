@@ -1,7 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gerrit</title><link>https://gerrited.github.io/posts/</link><description>Recent content in Posts on Gerrit</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Mon, 10 Jan 2022 07:24:32 +0100</lastBuildDate><atom:link href="https://gerrited.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>K8s Deployment visualisieren</title><link>https://gerrited.github.io/posts/2022/01/k8s-deployment-visualisieren/</link><pubDate>Mon, 10 Jan 2022 07:24:32 +0100</pubDate><guid>https://gerrited.github.io/posts/2022/01/k8s-deployment-visualisieren/</guid><description>Intro Um Deployments eines K8s Clusters zu visualisieren, habe ich mir Pimoroni Blinkt LED Strips gekauft und sie auf die GPIO-Slots der RPi des Clusters gesteckt.
-Demo Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Labels blinkt und blinktColor an Pods reagiert.
-Vorbereitung In dem Video verwende ich diese beiden Manifests:
-Ablauf Zuerst wird das Deployment &amp;ldquo;green&amp;rdquo; durchgeführt. Dadurch werden die grüne 16 Pods gleichmäßig auf die 4 Nodes verteilt.</description><content type="html"><![CDATA[<h1 id="intro">Intro</h1>
+Demo Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Labels blinkt und blinktColor an Pods reagiert. Damit die LEDs angesteuert werden können, laufen die Pods als cluster-admin. Weiteres unter &amp;ldquo;How it works&amp;rdquo; auf GitHub.
+Vorbereitung In dem Video verwende ich diese beiden Manifests:</description><content type="html"><![CDATA[<h1 id="intro">Intro</h1>
 <p>Um Deployments eines K8s Clusters zu visualisieren, habe ich mir <a href="https://learn.pimoroni.com/article/getting-started-with-blinkt">Pimoroni Blinkt</a> LED Strips gekauft und sie auf die GPIO-Slots der RPi des Clusters gesteckt.</p>
 <h1 id="demo">Demo</h1>
 
@@ -10,7 +9,7 @@ Ablauf Zuerst wird das Deployment &amp;ldquo;green&amp;rdquo; durchgeführt. Dad
 </div>
 
 <h1 id="details">Details</h1>
-<p>Durch <a href="https://github.com/gerrited/blinkt-k8s-controller">blinkt-controller</a> wird ein <a href="https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/">Daemonset</a> erstellt, welches auf die Labels blinkt und blinktColor an Pods reagiert.</p>
+<p>Durch <a href="https://github.com/gerrited/blinkt-k8s-controller">blinkt-controller</a> wird ein <a href="https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/">Daemonset</a> erstellt, welches auf die Labels blinkt und blinktColor an Pods reagiert. Damit die LEDs angesteuert werden können, laufen die Pods als cluster-admin. Weiteres unter <a href="https://github.com/gerrited/blinkt-k8s-controller#how-it-works">&ldquo;How it works&rdquo;</a> auf GitHub.</p>
 <h1 id="vorbereitung">Vorbereitung</h1>
 <p>In dem Video verwende ich diese beiden Manifests:</p>
 <script type="application/javascript" src="https://gist.github.com/gerrited/c9691d8dc4be346038c5f4908a9a2adf.js"></script>
