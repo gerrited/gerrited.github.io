@@ -27,7 +27,7 @@ Bloggen mit Hugo und GitHub Pages :: Gerrit
 <meta itemprop=description content="Plattform Eigentlich habe ich mich recht schnell für Hugo als Framework für das neue Blog entschieden. Davor hatte ich damit keinen Kontakt, aber Dokumentation und Community machten einen guten Eindruck auf mich. Außerdem waren andere Blogs und Websites, die auf Hugo basierte, simple, schnell und modern.
 Theme Das Theme hello-friend-ng hab ich auf unter Themes auf der offiziellen Hugo Website gefunden. Der Entwickler Djordje Atlialp nutzt es selbst für seinen Blog und ich bin bisher zufrieden mit dem Look und den integrierten Funktionen."><meta itemprop=datePublished content="2022-01-15T22:02:31+01:00">
 <meta itemprop=dateModified content="2022-01-15T22:02:31+01:00">
-<meta itemprop=wordCount content="346"><meta itemprop=image content="https://g11s.cc">
+<meta itemprop=wordCount content="442"><meta itemprop=image content="https://g11s.cc">
 <meta itemprop=keywords content="hugo,blog,">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://g11s.cc">
@@ -64,7 +64,7 @@ Theme Das Theme hello-friend-ng hab ich auf unter Themes auf der offiziellen Hug
 <main class=post>
 <div class=post-info>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-2 minutes
+3 minutes
 </p>
 </div>
 <article>
@@ -87,7 +87,20 @@ Theme Das Theme hello-friend-ng hab ich auf unter Themes auf der offiziellen Hug
 , /img/github.io-commits_hu8e2bfd563793b7fe31a15998c2fdbeef_980871_800x0_resize_box_3.png 800w
 , /img/github.io-commits_hu8e2bfd563793b7fe31a15998c2fdbeef_980871_1200x0_resize_box_3.png 1200w" src=/img/github.io-commits.png alt>
 <p>Das Blog wird bei GitHub Pages (<a href=https://github.com/gerrited/gerrited.github.io>Repo</a>) gehostet. Allerdings liegen die eigentlichen Quelldateien (Markdown, Bilder, Konfiguration, etc.) in einem anderen, privaten Repository, damit Entwürfe, Konfiguration und die Originalfotos (inkl. EXIF-Daten) nicht öffentlich sind. Ich habe mich bei der Einrichtung an dieser <a href=https://ruddra.com/hugo-deploy-static-page-using-github-actions/>Anleitung</a> orientiert.</p>
-<h1 id=ablauf>Ablauf</h1>
+<h1 id=status>Status</h1>
+<p>Durch <a href=https://github.com/gerrited/upptime>upptime</a> lasse ich die Erreichbarkeit und Geschwindigkeit der Seite regelmäßig prüfen. Dafür habe ich einfach ein eigenes Repo anhand des <a href=https://github.com/upptime/upptime>upptime Templates</a> erstellt. Weiteres ist in dem <a href=https://upptime.js.org/docs/get-started/>Getting started</a> beschrieben. Außerdem habe ich für die Status Badges ein eigenes Shortcode erstellt.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;display: flex&#34;</span>&gt;
+    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;margin-right:0.5em&#34;</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://g11s.cc/upptime/history/blog&#34;</span>&gt;&lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fuptime.json&#34;</span> /&gt;&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+    &lt;<span style=color:#f92672>div</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://g11s.cc/upptime/history/blog&#34;</span>&gt;&lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fresponse-time.json&#34;</span> /&gt;&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+&lt;/<span style=color:#f92672>div</span>&gt;
+</code></pre></div><p><strong>Demo</strong>
+<div style=display:flex>
+<div style=margin-right:.5em><a href=https://g11s.cc/upptime/history/blog><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fuptime.json"></a></div>
+<div><a href=https://g11s.cc/upptime/history/blog><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fresponse-time.json"></a></div>
+</div></p>
+<p>Die Verweise in den Links und Bildern sind hartkodiert und müssten ausgetaucht werden, wenn ihr den Shortcode für eure Website nutzen wollt. Wenn der Code unter /layouts/shortcodes/upptime.html gespeichert wird, kann er folgendermaßen in Markdown eingefügt werden.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>{{&lt; <span style=color:#f92672>upptime</span> &gt;}}
+</code></pre></div><h1 id=ablauf>Ablauf</h1>
 <p>Meistens teste die die Änderungen lokal (via <code>hugo server -D</code>) und pushe sie erst, wenn ich mit dem Ergebnis zufrieden bin. Danach wird die öffentliche Website innerhalb weniger Sekunden durch die konfigurierte GitHub Action aktualisiert.</p>
 <p>Von unterwegs können kleinere Anpassungen auch über die GitHub Weboberfläche vorgenommen werden. Allerdings ist der Editor dafür nur mittelmäßig geeignet und es gibt keine Vorschau der Änderungen.</p>
 <h1 id=fazit>Fazit</h1>
@@ -104,7 +117,7 @@ Theme Das Theme hello-friend-ng hab ich auf unter Themes auf der offiziellen Hug
 <span class=tag><a href=https://g11s.cc/categories/documentation/>documentation</a></span>
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-346 Words
+442 Words
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
 2022-01-15 21:02
