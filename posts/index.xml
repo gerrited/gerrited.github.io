@@ -106,7 +106,7 @@ Theme Das Theme hello-friend-ng hab ich auf unter Themes auf der offiziellen Hug
 &lt;/<span style="color:#f92672">div</span>&gt;
 </code></pre></div><p><strong>Demo</strong>
 <div style="display: flex">
-    <div style="margin-right:0.5em"><a href="https://status.g11s.cc/upptime/history/blog"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fuptime.json" /></a></div>
+    <div style="margin-right:0.5em"><a href="https://status.g11s.cc/history/blog"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fuptime.json" /></a></div>
     <div><a href="https://status.g11s.cc/history/blog"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fresponse-time.json" /></a></div>
 </div></p>
 <p>Die Verweise in den Links und Bildern sind hartkodiert und müssten ausgetaucht werden, wenn ihr den Shortcode für eure Website nutzen wollt. Wenn der Code unter /layouts/shortcodes/upptime.html gespeichert wird, kann er folgendermaßen in Markdown eingefügt werden.</p>
