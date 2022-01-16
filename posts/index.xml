@@ -523,7 +523,7 @@ reboot</code></pre></div>
 <p>Demnächst werden weitere Posts über Raspberry Pi und k3s folgen. Beispielsweise zeige ich eine Alternative zu <a href="https://inlets.dev/">inlets</a>, die via cloudflare und Argo Tunnel umgesetzt ist.</p>
 ]]></content></item><item><title>Happy New Year and Hello World!</title><link>https://g11s.cc/posts/2022/01/happy-new-year-and-hello-world/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/happy-new-year-and-hello-world/</guid><description>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.
 Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach auch zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Irgendwie auch passend.
-Also&amp;hellip; &amp;ldquo;Hello World!&amp;rdquo; und &amp;ldquo;Happy New Year!</description><content type="html"><![CDATA[<p>
+Also&amp;hellip; Hello World! und Happy New Year!</description><content type="html"><![CDATA[<p>
 
 
 
@@ -569,6 +569,6 @@ Also&amp;hellip; &amp;ldquo;Hello World!&amp;rdquo; und &amp;ldquo;Happy New Yea
 
  Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.</p>
 <p>Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach auch zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Irgendwie auch passend.</p>
-<p>Also&hellip; &ldquo;Hello World!&rdquo; und &ldquo;Happy New Year!&rdquo;</p>
+<p>Also&hellip; <code>Hello World!</code> und <code>Happy New Year!</code></p>
 <p>Weiteres zu mir und dem Blog unter <a href="https://g11s.cc/about/">About</a></p>
 ]]></content></item></channel></rss>
