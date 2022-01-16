@@ -109,7 +109,7 @@ Theme Das Theme hello-friend-ng hab ich auf unter Themes auf der offiziellen Hug
     <div style="margin-right:0.5em"><a href="https://status.g11s.cc/history/blog"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fuptime.json" /></a></div>
     <div><a href="https://status.g11s.cc/history/blog"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fresponse-time.json" /></a></div>
 </div></p>
-<p>Die Verweise in den Links und Bildern sind hartkodiert und müssten ausgetaucht werden, wenn ihr den Shortcode für eure Website nutzen wollt. Wenn der Code unter /layouts/shortcodes/upptime.html gespeichert wird, kann er folgendermaßen in Markdown eingefügt werden.</p>
+<p>Die Verweise in den Links und Bildern sind hartkodiert und müssten ausgetaucht werden, solltet ihr den Shortcode für eure Website nutzen wollen. Wenn der Code unter /layouts/shortcodes/upptime.html gespeichert wird, kann er folgendermaßen in Markdown eingefügt werden.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">{{&lt; <span style="color:#f92672">upptime</span> &gt;}}
 </code></pre></div><h1 id="ablauf">Ablauf</h1>
 <p>Meistens teste die die Änderungen lokal (via <code>hugo server -D</code>) und pushe sie erst, wenn ich mit dem Ergebnis zufrieden bin. Danach wird die öffentliche Website innerhalb weniger Sekunden durch die konfigurierte GitHub Action aktualisiert.</p>
