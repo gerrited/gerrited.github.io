@@ -141,6 +141,8 @@ Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Lab
 <h2 id="deploy">Deploy</h2>
 <p>Zuerst wird das Deployment &ldquo;green&rdquo; durchgeführt. Dadurch werden die 16 grünen Pods gleichmäßig auf die 4 Nodes verteilt.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f hello-blinkt-controller-green.yml</code></pre></div>
+<p>Der Vorgang des Deployments kann jedes Mal mit folgenden Befehl beobachtet werden.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl rollout status deployment/hello-blinkt</code></pre></div>
 <h2 id="update">Update</h2>
 <p>Sobald das Deployment erfolgreich war, wird das Deployment auf &ldquo;blue&rdquo; geändert. Kubernetes prüft dann erstmal vorsichtig, ob das Deployment in Ordnung ist. In dieser Übergangsphase sind sowohl grüne als auch blaue Pods aktiv. Wenn die neue Version des Deployments erfolgreich geprüft wurde, ersetzen weitere blaue Pods die alten grünen Pods.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f hello-blinkt-controller-blue.yml</code></pre></div>
@@ -149,8 +151,8 @@ Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Lab
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl delete -f hello-blinkt-controller-blue.yml</code></pre></div>
 <h1 id="fazit">Fazit</h1>
 <p>Durch die LEDs und die unterschiedlichen Farben, ist der Vorgang meiner Meinung nach deutlich greifbarer, als z.B. in Lens und damit gerade für kleine Kubernetes 101 Sessions geeignet.</p>
-]]></content></item><item><title>Raspberry Pi Cluster mit k3s</title><link>https://g11s.cc/posts/2022/01/raspberry-pi-cluster-mit-k3s/</link><pubDate>Sat, 08 Jan 2022 18:37:38 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/raspberry-pi-cluster-mit-k3s/</guid><description>Anfang 2020 habe ich mir folgendes gekauft:
-4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM) 4 x SanDisk Ultra MicroSDHC 32GB RPI CASE TR 19 (transparentes Gehäuse für mehrere Raspberry Pi) TP-Link 5-Port Gigabit Switch Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports diverse USB und LAN Kabel Der Gesamtpreis belief sich auf ca. 300€. Mein Ziel war es, mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können.</description><content type="html"><![CDATA[<p>Anfang 2020 habe ich mir folgendes gekauft:</p>
+]]></content></item><item><title>Raspberry Pi Cluster mit k3s</title><link>https://g11s.cc/posts/2022/01/raspberry-pi-cluster-mit-k3s/</link><pubDate>Sat, 08 Jan 2022 18:37:38 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/raspberry-pi-cluster-mit-k3s/</guid><description>Um mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können, habe ich Anfang 2020 folgendes bestellt:
+4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM) 4 x SanDisk Ultra MicroSDHC 32GB RPI CASE TR 19 (transparentes Gehäuse für mehrere Raspberry Pi) TP-Link 5-Port Gigabit Switch Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports diverse USB und LAN Kabel Weitere Produktinformationen können bei den üblichen Shops gefunden werden.</description><content type="html"><![CDATA[<p>Um mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können, habe ich Anfang 2020 folgendes bestellt:</p>
 <ul>
 <li>4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM)</li>
 <li>4 x  SanDisk Ultra MicroSDHC 32GB</li>
@@ -159,7 +161,7 @@ Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Lab
 <li>Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports</li>
 <li>diverse USB und LAN Kabel</li>
 </ul>
-<p>Der Gesamtpreis belief sich auf ca. 300€. Mein Ziel war es, mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können.</p>
+<p>Weitere Produktinformationen können bei den üblichen Shops gefunden werden. Der Gesamtpreis belief sich auf ca. 300€.</p>
 
 
 
@@ -516,11 +518,9 @@ Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Lab
 	});
 </script>
 
-<p>Ich hatte mich schon vor der Bestellung für <a href="https://k3s.io/">k3s</a> (ein &ldquo;Lightweight Kubernetes&rdquo;) als Kubernetes Distribution entschieden, weil es die ihr viele Infos gab und ich sie auf einem Raspberry Pi schon erfolgreich ausprobiert hatte. Während der Einrichtung orientierte ich mich hauptsächlich am Blogpost <a href="https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/">&ldquo;Will it cluster? k3s on your Raspberry Pi&rdquo; von Alex Ellis</a>, welcher weiterhin eine gute Grundlage bietet sollte, auch wenn sich mittlerweile einige Details geändert haben. Zusätzlich aktivierte ich noch den <a href="https://www.raspberrypi.com/documentation/computers/config_txt.html#arm_64bit">64 bit Kernel</a> in der config.txt.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rpi-update
-nano /boot/config.txt <span style="color:#75715e"># change arm_64bit=0 to arm_64bit=1</span>
-reboot</code></pre></div>
-<p>Demnächst werden weitere Posts über Raspberry Pi und k3s folgen. Beispielsweise zeige ich eine Alternative zu <a href="https://inlets.dev/">inlets</a>, die via cloudflare und Argo Tunnel umgesetzt ist.</p>
+<p>Schon vor der Bestellung hatte ich mich für <a href="https://k3s.io/">k3s</a> (ein &ldquo;Lightweight Kubernetes&rdquo;) als Kubernetes Distribution entschieden, weil es zu ihr viele Infos gab und ich sie auf einem Raspberry Pi schon erfolgreich ausprobiert hatte.</p>
+<p>Während der Einrichtung orientierte ich mich hauptsächlich am Blogpost <a href="https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/">&ldquo;Will it cluster? k3s on your Raspberry Pi&rdquo; von Alex Ellis</a>, welcher weiterhin eine gute Grundlage bieten sollte, auch wenn sich mittlerweile einige Details geändert haben. Zuästzlich würde ich noch den Blogpost <a href="https://anthonynsimon.com/blog/kubernetes-cluster-raspberry-pi/">&ldquo;Building a bare-metal Kubernetes cluster on Raspberry Pi&rdquo;</a> und die <a href="https://www.youtube.com/watch?v=kgVz4-SEhbE&amp;list=PL2_OBreMn7Frk57NLmLheAaSSpJLLL90G">Youtube Playlist von Jeff Geerling</a> zu seinem Raspberry Pi Cluster und Kubernetes empfehlen.</p>
+<p>Demnächst werden weitere Posts über Raspberry Pi und k3s folgen. Beispielsweise zeige ich eine Alternative zu dem <a href="https://inlets.dev/">inlets</a> Tunnel, die ich via cloudflare und Argo Tunnel umgesetzt habe.</p>
 ]]></content></item><item><title>Happy New Year and Hello World!</title><link>https://g11s.cc/posts/2022/01/happy-new-year-and-hello-world/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/happy-new-year-and-hello-world/</guid><description>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.
 Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach auch zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Irgendwie auch passend.
 Also&amp;hellip; Hello World! und Happy New Year!</description><content type="html"><![CDATA[<p>
