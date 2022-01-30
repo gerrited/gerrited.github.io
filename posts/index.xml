@@ -1,4 +1,57 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gerrit</title><link>https://g11s.cc/posts/</link><description>Recent content in Posts on Gerrit</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><copyright>&lt;a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0&lt;/a></copyright><lastBuildDate>Sat, 15 Jan 2022 22:02:31 +0100</lastBuildDate><atom:link href="https://g11s.cc/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Bloggen mit Hugo und GitHub Pages</title><link>https://g11s.cc/posts/2022/01/bloggen-mit-hugo-und-github-pages/</link><pubDate>Sat, 15 Jan 2022 22:02:31 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/bloggen-mit-hugo-und-github-pages/</guid><description>Plattform Eigentlich habe ich mich recht schnell für Hugo als Framework für das neue Blog entschieden. Davor hatte ich damit keinen Kontakt, aber Dokumentation und Community machten einen guten Eindruck auf mich. Außerdem waren andere Blogs und Websites, die auf Hugo basierte, simple, schnell und modern.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gerrit</title><link>https://g11s.cc/posts/</link><description>Recent content in Posts on Gerrit</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><copyright>&lt;a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0&lt;/a></copyright><lastBuildDate>Sun, 30 Jan 2022 15:24:11 +0100</lastBuildDate><atom:link href="https://g11s.cc/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Lokales K8s im Internet verfügbar</title><link>https://g11s.cc/posts/2022/01/lokales-k8s-im-internet-verf%C3%BCgbar/</link><pubDate>Sun, 30 Jan 2022 15:24:11 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/lokales-k8s-im-internet-verf%C3%BCgbar/</guid><description>Vorbereitungen Cloudflare bietet seit 2021 (siehe A Boring Announcement: Free Tunnels for Everyone) kostenlose Tunnels an. Damit können lokale Websites im Internet verfügbar gemacht werden. Benötigt wird nur eine Domain, bei der Cloudflare als Nameserver hinterlegt ist. Wie das genau geht, ist unter &amp;ldquo;Set up your first tunnel&amp;rdquo; beschrieben.
+Tunnel für Services im Kubernetes Cluster Erstellte Tunnel können auch für Services in einem Kubernetes Cluster genutzt werden. Eine Anleitung mit Beispiel gibt es in meinem Fork von cloudflare/argo-tunnel-examples.</description><content type="html"><![CDATA[<h1 id="vorbereitungen">Vorbereitungen</h1>
+<p>Cloudflare bietet seit 2021 (siehe <a href="https://blog.cloudflare.com/tunnel-for-everyone/">A Boring Announcement: Free Tunnels for Everyone</a>) kostenlose Tunnels an. Damit können lokale Websites im Internet verfügbar gemacht werden. Benötigt wird nur eine Domain, bei der Cloudflare als Nameserver hinterlegt ist. Wie das genau geht, ist unter <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide">&ldquo;Set up your first tunnel&rdquo;</a> beschrieben.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img
+  
+  
+  sizes="(min-width: 35em) 720px, 100vw"
+  srcset='
+  
+    /img/k3s-cloudflared_hub76663c2a961749a317a7310078100cb_169795_500x0_resize_box_3.png 500w
+  
+  
+    , /img/k3s-cloudflared_hub76663c2a961749a317a7310078100cb_169795_800x0_resize_box_3.png 800w
+  
+  
+    , /img/k3s-cloudflared_hub76663c2a961749a317a7310078100cb_169795_1200x0_resize_box_3.png 1200w
+  '
+  
+    src="/img/k3s-cloudflared.png"
+  
+  alt="">
+
+
+<h1 id="tunnel-für-services-im-kubernetes-cluster">Tunnel für Services im Kubernetes Cluster</h1>
+<p>Erstellte Tunnel können auch für Services in einem Kubernetes Cluster genutzt werden. Eine Anleitung mit Beispiel gibt es in <a href="https://github.com/gerrited/argo-tunnel-examples/tree/master/named-tunnel-k8s">meinem Fork von cloudflare/argo-tunnel-examples</a>. Im dortigen Kubernetes Manifest <a href="https://github.com/gerrited/argo-tunnel-examples/blob/master/named-tunnel-k8s/cloudflared.yaml">&ldquo;cloudflared.yml&rdquo;</a> ich habe das Container Image von <a href="https://hub.docker.com/r/cloudflare/cloudflared/tags">cloudflare/cloudflared</a> auf <a href="https://hub.docker.com/r/erisamoe/cloudflared/tags">erisamoe/cloudflared</a> geändert, damit das Deployment auch auf arm64 und nicht nur auf amd64 funktioniert.</p>
+<p>Nachdem das Deployment angepasst und erfolgreich durchgeführt wurde, ist der Service unter der gewählten Domain erreichbar. Dank der Zertifikate von Cloudflare kann auch https genutzt werden. Außerdem wird Last automatisch auf alle Pods des Services verteilt.</p>
+<h1 id="alternativen">Alternativen</h1>
+<p>Auch <a href="https://inlets.dev/">inlets</a> von <a href="https://www.alexellis.io/">Alex Ellis</a> kann als Tunnel genutzt werden. Angefangen als kleines Projekt, hat Inlets 2021 in einem <a href="https://inlets.dev/blog/2021/07/27/monthly-subscription.html">Blogpost</a> bekanntgegeben, dass sie jetzt eine monatliche Subscription anbieten. Diese sollte man sich genauer anschauen, wenn man eine einfache Lösung braucht oder einen großen Bogen um Cloudflare machen möchte.</p>
+]]></content></item><item><title>Bloggen mit Hugo und GitHub Pages</title><link>https://g11s.cc/posts/2022/01/bloggen-mit-hugo-und-github-pages/</link><pubDate>Sat, 15 Jan 2022 22:02:31 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/bloggen-mit-hugo-und-github-pages/</guid><description>Plattform Eigentlich habe ich mich recht schnell für Hugo als Framework für das neue Blog entschieden. Davor hatte ich damit keinen Kontakt, aber Dokumentation und Community machten einen guten Eindruck auf mich. Außerdem waren andere Blogs und Websites, die auf Hugo basierte, simple, schnell und modern.
 Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter den Themes auf der offiziellen Hugo Website gefunden. Der Entwickler Djordje Atlialp nutzt es selbst für seinen Blog und ich bin bisher zufrieden mit dem Look und den integrierten Funktionen.</description><content type="html"><![CDATA[<h1 id="plattform">Plattform</h1>
 
 
