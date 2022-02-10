@@ -44,15 +44,15 @@ Tunnel für Services im Kubernetes Cluster Erstellte Tunnel können auch für Se
   alt="">
 
 
-<h1 id="vorbereitungen">Vorbereitungen</h1>
+<h2 id="vorbereitungen">Vorbereitungen</h2>
 <p>Cloudflare bietet seit 2021 (siehe <a href="https://blog.cloudflare.com/tunnel-for-everyone/">A Boring Announcement: Free Tunnels for Everyone</a>) kostenlose Tunnels an. Damit können lokale Websites im Internet verfügbar gemacht werden. Benötigt wird nur eine Domain, bei der Cloudflare als Nameserver hinterlegt ist. Wie das genau geht, ist unter <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide">&ldquo;Set up your first tunnel&rdquo;</a> beschrieben.</p>
-<h1 id="tunnel-für-services-im-kubernetes-cluster">Tunnel für Services im Kubernetes Cluster</h1>
+<h2 id="tunnel-für-services-im-kubernetes-cluster">Tunnel für Services im Kubernetes Cluster</h2>
 <p>Erstellte Tunnel können auch für Services in einem Kubernetes Cluster genutzt werden. Eine Anleitung mit Beispiel gibt es in <a href="https://github.com/gerrited/argo-tunnel-examples/tree/master/named-tunnel-k8s">meinem Fork von cloudflare/argo-tunnel-examples</a>. Im dortigen Kubernetes Manifest <a href="https://github.com/gerrited/argo-tunnel-examples/blob/master/named-tunnel-k8s/cloudflared.yaml">&ldquo;cloudflared.yml&rdquo;</a> ich habe das Container Image von <a href="https://hub.docker.com/r/cloudflare/cloudflared/tags">cloudflare/cloudflared</a> auf <a href="https://hub.docker.com/r/erisamoe/cloudflared/tags">erisamoe/cloudflared</a> geändert, damit das Deployment auch auf arm64 (also auch auf einem Raspberry Pi) und nicht nur auf amd64 funktioniert.</p>
 <p>Nachdem das Deployment angepasst und erfolgreich durchgeführt wurde, ist der Service unter der gewählten Domain erreichbar. Dank der Zertifikate von Cloudflare kann auch https genutzt werden. Außerdem wird Last automatisch auf alle Pods des Services verteilt.</p>
-<h1 id="alternativen">Alternativen</h1>
+<h2 id="alternativen">Alternativen</h2>
 <p>Auch <a href="https://inlets.dev/">inlets</a> von <a href="https://www.alexellis.io/">Alex Ellis</a> kann als Tunnel genutzt werden. Angefangen mit einer kostenlosen Option, hat Inlets 2021 in einem <a href="https://inlets.dev/blog/2021/07/27/monthly-subscription.html">Blogpost</a> bekanntgegeben, dass sie jetzt eine monatliche Subscription anbieten. Das Projekt sollte man sich auf jeden Fall genauer anschauen, wenn eine einfache Lösung benötigt wird oder man einen großen Bogen um Cloudflare machen möchte.</p>
 ]]></content></item><item><title>Bloggen mit Hugo und GitHub Pages</title><link>https://g11s.cc/posts/2022/01/bloggen-mit-hugo-und-github-pages/</link><pubDate>Sat, 15 Jan 2022 22:02:31 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/bloggen-mit-hugo-und-github-pages/</guid><description>Plattform Eigentlich habe ich mich recht schnell für Hugo als Framework für das neue Blog entschieden. Davor hatte ich damit keinen Kontakt, aber Dokumentation und Community machten einen guten Eindruck auf mich. Außerdem waren andere Blogs und Websites, die auf Hugo basierte, simple, schnell und modern.
-Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter den Themes auf der offiziellen Hugo Website gefunden. Der Entwickler Djordje Atlialp nutzt es selbst für seinen Blog und ich bin bisher zufrieden mit dem Look und den integrierten Funktionen.</description><content type="html"><![CDATA[<h1 id="plattform">Plattform</h1>
+Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter den Themes auf der offiziellen Hugo Website gefunden. Der Entwickler Djordje Atlialp nutzt es selbst für seinen Blog und ich bin bisher zufrieden mit dem Look und den integrierten Funktionen.</description><content type="html"><![CDATA[<h2 id="plattform">Plattform</h2>
 
 
 
@@ -99,12 +99,12 @@ Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter de
 
 
 <p>Eigentlich habe ich mich recht schnell für <a href="https://gohugo.io/" title="Hugo">Hugo</a> als Framework für das neue Blog entschieden. Davor hatte ich damit keinen Kontakt, aber Dokumentation und Community machten einen guten Eindruck auf mich. Außerdem waren andere Blogs und Websites, die auf Hugo basierte, simple, schnell und modern.</p>
-<h1 id="theme">Theme</h1>
+<h2 id="theme">Theme</h2>
 <p>Das Theme <a href="https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/" title="Hugo Theme hello-friend-ng">hello-friend-ng</a> habe ich (einfach und etwas langweilig) unter den Themes auf der <a href="https://themes.gohugo.io/">offiziellen Hugo Website</a> gefunden. Der Entwickler <a href="https://atlialp.com/">Djordje Atlialp</a> nutzt es selbst für seinen Blog und ich bin bisher zufrieden mit dem Look und den integrierten Funktionen.</p>
-<h1 id="erweiterungen">Erweiterungen</h1>
+<h2 id="erweiterungen">Erweiterungen</h2>
 <p>Zusätzlich zu den Grundfunktionen des Themes, nutze ich noch <a href="https://github.com/mfg92/hugo-shortcode-gallery">hugo-shortcode-gallery</a> für Fotogallerien (z.B. im Blog Post über das <a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/">Raspberry Pi Kubernetes Cluster</a>) und <a href="https://github.com/martignoni/hugo-notice">hugo-notice</a>, falls ich optisch auffallende Anmerkungen einfügen will.</p>
 <p>Bei <code>hugo-shortcode-gallery</code> hat das Einrichten allerdings fast 2 Stunden gedauert, weil die Erweiterung jQuery voraussetzt, aber das Theme <code>hello-friend-ng</code> ohne auskommt. Letztendlich bin ich erst durch ein <a href="https://github.com/mfg92/hugo-shortcode-gallery/issues/32">Issue bei GitHub</a> auf die Option <code>loadJQuery</code> aufmerksam gemacht worden. Nur so als Tipp, falls ihr die Kombination aus dem Theme und der Erweiterung auch nutzen wollt. ;)</p>
-<h1 id="hosting">Hosting</h1>
+<h2 id="hosting">Hosting</h2>
 
 
 
@@ -151,7 +151,7 @@ Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter de
 
 
 <p>Das Blog wird bei GitHub Pages (<a href="https://github.com/gerrited/gerrited.github.io">Repo</a>) gehostet. Allerdings liegen die eigentlichen Quelldateien (Markdown, Bilder, Konfiguration, etc.) in einem anderen, privaten Repository, damit Entwürfe, Konfiguration und die Originalfotos (inkl. EXIF-Daten) nicht öffentlich sind. Ich habe mich bei der Einrichtung an dieser <a href="https://ruddra.com/hugo-deploy-static-page-using-github-actions/">Anleitung</a> orientiert.</p>
-<h1 id="status">Status</h1>
+<h2 id="status">Status</h2>
 <p>Auf der separaten <a href="https://status.g11s.cc">Status Page</a> wird die Erreichbarkeit und Geschwindigkeit des Blogs regelmäßig durch <a href="https://github.com/upptime/upptime">upptime</a> geprüft. Dafür habe ich einfach ein eigenes <a href="https://github.com/gerrited/upptime">Repo</a> anhand des upptime Templates erstellt. Weiteres ist in dem <a href="https://upptime.js.org/docs/get-started/">Getting started</a> beschrieben. Außerdem habe ich für die Status Badges einen kleinen Shortcode geschrieben.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display: flex&#34;</span>&gt;
     &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;margin-right:0.5em&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://g11s.cc/upptime/history/blog&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fuptime.json&#34;</span> /&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
@@ -164,17 +164,17 @@ Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter de
 </div></p>
 <p>Die Verweise in den Links und Bildern sind hartkodiert und müssten ausgetaucht werden, solltet ihr den Shortcode für eure Website nutzen wollen. Wenn der Code unter /layouts/shortcodes/upptime.html gespeichert wird, kann er folgendermaßen in Markdown eingefügt werden.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">{{&lt; <span style="color:#f92672">upptime</span> &gt;}}
-</code></pre></div><h1 id="ablauf">Ablauf</h1>
+</code></pre></div><h2 id="ablauf">Ablauf</h2>
 <p>Meistens teste die die Änderungen lokal (via <code>hugo server -D</code>) und pushe sie erst, wenn ich mit dem Ergebnis zufrieden bin. Danach wird die öffentliche Website innerhalb weniger Sekunden durch die konfigurierte GitHub Action aktualisiert.</p>
 <p>Von unterwegs können kleinere Anpassungen auch über die GitHub Weboberfläche vorgenommen werden. Allerdings ist der Editor dafür nur mittelmäßig geeignet und es gibt keine Vorschau der Änderungen.</p>
-<h1 id="fazit">Fazit</h1>
+<h2 id="fazit">Fazit</h2>
 <p>Aktuell bin ich recht zufrieden mit dem Stack und Ablauf. Einiges ist etwas fummeliger als beim einem größeren System wie z.B. Wordpress, mit dem ich seit über 10 Jahren regelmäßig arbeite. Aber genau wegen des anderen Ansatzes, der Leichtgewichtigkeit und ein wenig Extraarbeit, habe ich mich auf die Suche nach einer anderen Lösung gemacht. Und vermutlich gehen die meisten Sachen in ein paar Wochen deutlich leichter von der Hand.</p>
 ]]></content></item><item><title>K8s Deployment visualisieren</title><link>https://g11s.cc/posts/2022/01/k8s-deployment-visualisieren/</link><pubDate>Mon, 10 Jan 2022 07:24:32 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/k8s-deployment-visualisieren/</guid><description>Intro Um Deployments eines Kubernetes Clusters zu visualisieren, habe ich mir Pimoroni Blinkt LED Strips gekauft und sie auf die GPIO-Slots der RPi des Clusters gesteckt.
 Demo .notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Note
 Manchmal wird das Video nicht geladen oder es wird stattdessen die Meldung &amp;ldquo;Diese Live-Veranstaltung ist nicht mehr verfügbar.&amp;rdquo; angezeigt. Oft hilft dann ein Reload.
-Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Labels blinkt und blinktColor von Pods reagiert.</description><content type="html"><![CDATA[<h1 id="intro">Intro</h1>
+Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Labels blinkt und blinktColor von Pods reagiert.</description><content type="html"><![CDATA[<h2 id="intro">Intro</h2>
 <p>Um Deployments eines Kubernetes Clusters zu visualisieren, habe ich mir <a href="https://learn.pimoroni.com/article/getting-started-with-blinkt">Pimoroni Blinkt</a> LED Strips gekauft und sie auf die GPIO-Slots der RPi des Clusters gesteckt.</p>
-<h1 id="demo">Demo</h1>
+<h2 id="demo">Demo</h2>
 <style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
 <div><svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg></div><div class="notice note" >
 <p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#note-notice"></use></svg></span>Note</p><p>Manchmal wird das Video nicht geladen oder es wird stattdessen die Meldung &ldquo;Diese Live-Veranstaltung ist nicht mehr verfügbar.&rdquo; angezeigt. Oft hilft dann ein Reload.</p></div>
@@ -184,25 +184,25 @@ Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Lab
   <iframe src="https://www.youtube-nocookie.com/embed/U6AsAn490-4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h1 id="details">Details</h1>
+<h2 id="details">Details</h2>
 <p>Durch <a href="https://github.com/gerrited/blinkt-k8s-controller">blinkt-controller</a> wird ein <a href="https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/">Daemonset</a> erstellt, welches auf die Labels <code>blinkt</code> und <code>blinktColor</code> von Pods reagiert. Damit die LEDs angesteuert werden können, laufen die Pods als cluster-admin. Weiteres unter <a href="https://github.com/gerrited/blinkt-k8s-controller#how-it-works">&ldquo;How it works&rdquo;</a> auf GitHub.</p>
-<h1 id="vorbereitung">Vorbereitung</h1>
+<h2 id="vorbereitung">Vorbereitung</h2>
 <p>In dem Video ist der Controller bereits eingerichtet. Zusätzlich verwende ich diese beiden Manifests:</p>
 <script type="application/javascript" src="https://gist.github.com/gerrited/c9691d8dc4be346038c5f4908a9a2adf.js"></script>
 
-<h1 id="ablauf">Ablauf</h1>
-<h2 id="deploy">Deploy</h2>
+<h2 id="ablauf">Ablauf</h2>
+<h3 id="deploy">Deploy</h3>
 <p>Zuerst wird das Deployment &ldquo;green&rdquo; durchgeführt. Dadurch werden die 16 grünen Pods gleichmäßig auf die 4 Nodes verteilt.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f hello-blinkt-controller-green.yml</code></pre></div>
 <p>Der Vorgang des Deployments kann jedes Mal mit folgenden Befehl beobachtet werden.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl rollout status deployment/hello-blinkt</code></pre></div>
-<h2 id="update">Update</h2>
+<h3 id="update">Update</h3>
 <p>Sobald das Deployment erfolgreich war, wird das Deployment auf &ldquo;blue&rdquo; geändert. Kubernetes prüft dann erstmal vorsichtig, ob das Deployment in Ordnung ist. In dieser Übergangsphase sind sowohl grüne als auch blaue Pods aktiv. Wenn die neue Version des Deployments erfolgreich geprüft wurde, ersetzen weitere blaue Pods die alten grünen Pods.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f hello-blinkt-controller-blue.yml</code></pre></div>
-<h2 id="delete">Delete</h2>
+<h3 id="delete">Delete</h3>
 <p>Anschließend wird das Deployment gelöscht. Auch hier geht K8s schrittweise vor und entfernt nacheinander die einzelnen Pods.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl delete -f hello-blinkt-controller-blue.yml</code></pre></div>
-<h1 id="fazit">Fazit</h1>
+<h2 id="fazit">Fazit</h2>
 <p>Durch die LEDs und die unterschiedlichen Farben, ist der Vorgang meiner Meinung nach deutlich greifbarer, als z.B. in Lens und damit gerade für kleine Kubernetes 101 Sessions geeignet.</p>
 ]]></content></item><item><title>Raspberry Pi Cluster mit k3s</title><link>https://g11s.cc/posts/2022/01/raspberry-pi-cluster-mit-k3s/</link><pubDate>Sat, 08 Jan 2022 18:37:38 +0100</pubDate><guid>https://g11s.cc/posts/2022/01/raspberry-pi-cluster-mit-k3s/</guid><description>Um mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können, habe ich Anfang 2020 folgendes bestellt:
 4 x Raspberry Pi 4 B (4x 1,5 GHz, 2 GB RAM) 4 x SanDisk Ultra MicroSDHC 32GB RPI CASE TR 19 (transparentes Gehäuse für mehrere Raspberry Pi) TP-Link 5-Port Gigabit Switch Anker USB-Ladegerät PowerPort+, 5 V, 2400 mA, 5 USB-Ports diverse USB und LAN Kabel Weitere Produktinformationen können bei den üblichen Shops gefunden werden.</description><content type="html"><![CDATA[<p>Um mich auf einer Art Spielwiese mit Kubernetes auseinandersetzen zu können, habe ich Anfang 2020 folgendes bestellt:</p>

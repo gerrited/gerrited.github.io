@@ -72,22 +72,22 @@ Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter de
 <a href=https://g11s.cc/posts/2022/01/bloggen-mit-hugo-und-github-pages/>Bloggen mit Hugo und GitHub Pages</a>
 </h1>
 <div class=post-content>
-<h1 id=plattform>Plattform</h1>
+<h2 id=plattform>Plattform</h2>
 <img sizes="(min-width: 35em) 720px, 100vw" srcset="/img/hugo-website_huf138cfa89d09395479777d48afb1e9f0_326811_500x0_resize_box_3.png 500w
 , /img/hugo-website_huf138cfa89d09395479777d48afb1e9f0_326811_800x0_resize_box_3.png 800w
 , /img/hugo-website_huf138cfa89d09395479777d48afb1e9f0_326811_1200x0_resize_box_3.png 1200w" src=/img/hugo-website.png alt>
 <p>Eigentlich habe ich mich recht schnell für <a href=https://gohugo.io/ title=Hugo>Hugo</a> als Framework für das neue Blog entschieden. Davor hatte ich damit keinen Kontakt, aber Dokumentation und Community machten einen guten Eindruck auf mich. Außerdem waren andere Blogs und Websites, die auf Hugo basierte, simple, schnell und modern.</p>
-<h1 id=theme>Theme</h1>
+<h2 id=theme>Theme</h2>
 <p>Das Theme <a href=https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/ title="Hugo Theme hello-friend-ng">hello-friend-ng</a> habe ich (einfach und etwas langweilig) unter den Themes auf der <a href=https://themes.gohugo.io/>offiziellen Hugo Website</a> gefunden. Der Entwickler <a href=https://atlialp.com/>Djordje Atlialp</a> nutzt es selbst für seinen Blog und ich bin bisher zufrieden mit dem Look und den integrierten Funktionen.</p>
-<h1 id=erweiterungen>Erweiterungen</h1>
+<h2 id=erweiterungen>Erweiterungen</h2>
 <p>Zusätzlich zu den Grundfunktionen des Themes, nutze ich noch <a href=https://github.com/mfg92/hugo-shortcode-gallery>hugo-shortcode-gallery</a> für Fotogallerien (z.B. im Blog Post über das <a href=/posts/2022/01/raspberry-pi-cluster-mit-k3s/>Raspberry Pi Kubernetes Cluster</a>) und <a href=https://github.com/martignoni/hugo-notice>hugo-notice</a>, falls ich optisch auffallende Anmerkungen einfügen will.</p>
 <p>Bei <code>hugo-shortcode-gallery</code> hat das Einrichten allerdings fast 2 Stunden gedauert, weil die Erweiterung jQuery voraussetzt, aber das Theme <code>hello-friend-ng</code> ohne auskommt. Letztendlich bin ich erst durch ein <a href=https://github.com/mfg92/hugo-shortcode-gallery/issues/32>Issue bei GitHub</a> auf die Option <code>loadJQuery</code> aufmerksam gemacht worden. Nur so als Tipp, falls ihr die Kombination aus dem Theme und der Erweiterung auch nutzen wollt. ;)</p>
-<h1 id=hosting>Hosting</h1>
+<h2 id=hosting>Hosting</h2>
 <img sizes="(min-width: 35em) 720px, 100vw" srcset="/img/github.io-commits_hu8e2bfd563793b7fe31a15998c2fdbeef_980871_500x0_resize_box_3.png 500w
 , /img/github.io-commits_hu8e2bfd563793b7fe31a15998c2fdbeef_980871_800x0_resize_box_3.png 800w
 , /img/github.io-commits_hu8e2bfd563793b7fe31a15998c2fdbeef_980871_1200x0_resize_box_3.png 1200w" src=/img/github.io-commits.png alt>
 <p>Das Blog wird bei GitHub Pages (<a href=https://github.com/gerrited/gerrited.github.io>Repo</a>) gehostet. Allerdings liegen die eigentlichen Quelldateien (Markdown, Bilder, Konfiguration, etc.) in einem anderen, privaten Repository, damit Entwürfe, Konfiguration und die Originalfotos (inkl. EXIF-Daten) nicht öffentlich sind. Ich habe mich bei der Einrichtung an dieser <a href=https://ruddra.com/hugo-deploy-static-page-using-github-actions/>Anleitung</a> orientiert.</p>
-<h1 id=status>Status</h1>
+<h2 id=status>Status</h2>
 <p>Auf der separaten <a href=https://status.g11s.cc>Status Page</a> wird die Erreichbarkeit und Geschwindigkeit des Blogs regelmäßig durch <a href=https://github.com/upptime/upptime>upptime</a> geprüft. Dafür habe ich einfach ein eigenes <a href=https://github.com/gerrited/upptime>Repo</a> anhand des upptime Templates erstellt. Weiteres ist in dem <a href=https://upptime.js.org/docs/get-started/>Getting started</a> beschrieben. Außerdem habe ich für die Status Badges einen kleinen Shortcode geschrieben.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;display: flex&#34;</span>&gt;
     &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;margin-right:0.5em&#34;</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://g11s.cc/upptime/history/blog&#34;</span>&gt;&lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgerrited%2Fupptime%2Fmaster%2Fapi%2Fblog%2Fuptime.json&#34;</span> /&gt;&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
@@ -100,10 +100,10 @@ Theme Das Theme hello-friend-ng habe ich (einfach und etwas langweilig) unter de
 </div></p>
 <p>Die Verweise in den Links und Bildern sind hartkodiert und müssten ausgetaucht werden, solltet ihr den Shortcode für eure Website nutzen wollen. Wenn der Code unter /layouts/shortcodes/upptime.html gespeichert wird, kann er folgendermaßen in Markdown eingefügt werden.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>{{&lt; <span style=color:#f92672>upptime</span> &gt;}}
-</code></pre></div><h1 id=ablauf>Ablauf</h1>
+</code></pre></div><h2 id=ablauf>Ablauf</h2>
 <p>Meistens teste die die Änderungen lokal (via <code>hugo server -D</code>) und pushe sie erst, wenn ich mit dem Ergebnis zufrieden bin. Danach wird die öffentliche Website innerhalb weniger Sekunden durch die konfigurierte GitHub Action aktualisiert.</p>
 <p>Von unterwegs können kleinere Anpassungen auch über die GitHub Weboberfläche vorgenommen werden. Allerdings ist der Editor dafür nur mittelmäßig geeignet und es gibt keine Vorschau der Änderungen.</p>
-<h1 id=fazit>Fazit</h1>
+<h2 id=fazit>Fazit</h2>
 <p>Aktuell bin ich recht zufrieden mit dem Stack und Ablauf. Einiges ist etwas fummeliger als beim einem größeren System wie z.B. Wordpress, mit dem ich seit über 10 Jahren regelmäßig arbeite. Aber genau wegen des anderen Ansatzes, der Leichtgewichtigkeit und ein wenig Extraarbeit, habe ich mich auf die Suche nach einer anderen Lösung gemacht. Und vermutlich gehen die meisten Sachen in ein paar Wochen deutlich leichter von der Hand.</p>
 </div>
 </article>
