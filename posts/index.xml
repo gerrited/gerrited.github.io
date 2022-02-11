@@ -30,13 +30,9 @@ Tunnel für Services im Kubernetes Cluster Erstellte Tunnel können auch für Se
   sizes="(min-width: 35em) 720px, 100vw"
   srcset='
   
-    /img/k3s-cloudflared_hub76663c2a961749a317a7310078100cb_169795_500x0_resize_box_3.png 500w
+    /img/k3s-cloudflared_hu957f5315ae9da310d3c8211121e0dfd8_44151_500x0_resize_box_3.png 500w
   
   
-    , /img/k3s-cloudflared_hub76663c2a961749a317a7310078100cb_169795_800x0_resize_box_3.png 800w
-  
-  
-    , /img/k3s-cloudflared_hub76663c2a961749a317a7310078100cb_169795_1200x0_resize_box_3.png 1200w
   '
   
     src="/img/k3s-cloudflared.png"
