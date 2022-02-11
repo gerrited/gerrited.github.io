@@ -280,8 +280,8 @@ Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Lab
 
 
 
-<div id="gallery-a01f0794cbfa5f6cc59d7ef1be9a4533-0-wrapper" class="gallery-wrapper">
-<div id="gallery-a01f0794cbfa5f6cc59d7ef1be9a4533-0" class="justified-gallery">
+<div id="gallery-53019b3d45843050236ea504dabe72df-0-wrapper" class="gallery-wrapper">
+<div id="gallery-53019b3d45843050236ea504dabe72df-0" class="justified-gallery">
 	
 		
 		
@@ -536,7 +536,7 @@ Details Durch blinkt-controller wird ein Daemonset erstellt, welches auf die Lab
 	}
 
 	$( document ).ready(() => {
-		const gallery = $("#gallery-a01f0794cbfa5f6cc59d7ef1be9a4533-0");
+		const gallery = $("#gallery-53019b3d45843050236ea504dabe72df-0");
 		
 
 		
