@@ -27,7 +27,7 @@ Unit-Tests für IoC Container :: Gerrit
 <meta itemprop=description content="Wenn für eine Anwendung Dependency Injection (DI) genutzt wird und ein Inversion of Control (IoC) Container wie Autofac zum Einsatz kommt, kann es schnell passieren, dass nicht alle benötigten Komponenten registriert werden. Während der Entwicklung fällt das meistens nicht auf, aber sobald die Anwendung gestartet und genutzt wird, kommt es zu Fehlermeldungen, die oft zum Absturz der Anwendung führen.
 Unhandled exception. Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'ConsoleApp.Interfaces.ITextWriter' has not been registered."><meta itemprop=datePublished content="2022-02-12T11:02:32+01:00">
 <meta itemprop=dateModified content="2022-02-12T11:02:32+01:00">
-<meta itemprop=wordCount content="949"><meta itemprop=image content="https://g11s.cc/img/006-title.png">
+<meta itemprop=wordCount content="950"><meta itemprop=image content="https://g11s.cc/img/006-title.png">
 <meta itemprop=keywords content="inversion-of-control,dependency-injection,unit-tests,">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://g11s.cc/img/006-title.png">
@@ -133,7 +133,7 @@ writer.Write();</code></pre></div>
 }</code></pre></div>
 <p>Durch <code>IsRegistered</code> wird der Typ nicht aufgelöst und es werden keine externen Ressourcen wie Datenbankverbindungen erstellt, was zu Fehlern wie &ldquo;Anmeldung fehlgeschlagen&rdquo; oder &ldquo;Server nicht gefunden&rdquo; führen könnte. Solche Tests sollten trotzdem vermieden werden, weil jetzt nicht sichergestellt werden kann, ob alle Anhängigkeiten der registrierten Implementierung von <code>IDatabaseConnection</code> aufgelöst werden können.</p>
 <h2 id=sind-das-unit-tests>Sind das Unit-Tests?</h2>
-<p>Ob es sich hierbei um Unit- oder Integrationstests handelt, ist (wie so häufig) abhängig von der individuellen Perspektive und Motivation. Getestet wird eine Komponente &ldquo;IoC Konfiguration&rdquo;. Außerdem können die Tests schnell und ohne weitere Konfiguration ausgeführt werden. Andererseits werden Abhängigkeiten der Implementierungen aufgelöst, wodurch ganz eindeutig mehrere Klassen und Projekte am Test beteiligt sind. Ich persönlich bevorzuge grundsätzlich eine Aufteilung der Tests in Unit (eher schnell und ohne Konfiguration) und Integration (eher langsam, evtl. ist eine Konfiguration nötig und benötigen Zugriff auf externe Ressourcen wie Dateien und Datenbanken), wobei der Grenze bewusst unscharf bleibt.</p>
+<p>Ob es sich hierbei um Unit- oder Integrationstests handelt, ist (wie so häufig) abhängig von der individuellen Perspektive und Motivation. Getestet wird eine Komponente &ldquo;IoC Konfiguration&rdquo;. Außerdem können die Tests schnell und ohne weitere Konfiguration ausgeführt werden. Andererseits werden Abhängigkeiten der Implementierungen aufgelöst, wodurch ganz eindeutig mehrere Klassen und Projekte am Test beteiligt sind. Ich persönlich bevorzuge grundsätzlich eine Aufteilung der Tests in Unit (eher schnell und ohne Konfiguration) und Integration (eher langsam, evtl. ist eine Konfiguration nötig oder es wird auf externe Ressourcen wie Dateien und Datenbanken zugegriffen), wobei der Grenze bewusst unscharf bleibt.</p>
 <h2 id=probleme>Probleme</h2>
 <p>Die Tests werden deutlich schwieriger, wenn es keinen eindeutigen Einstiegspunkt, individuelle Lifetimescopes (z.B. pro API Request) oder weitere Möglichkeiten zum Auflösen von Abhängigkeiten (z.B. versteckte Service Locater mit einer anderen IoC Konfiguration) gibt. Auf solche Komplexitätsverstärker versuche ich aber sowieso möglichst zu verzichten.</p>
 <p>Außerdem wird die Aussagekraft von Tests verringert, wenn viele Registrierungen aufgrund von externen Ressourcen durch Test Doubles ersetzt werden müssen, weil die wirklichen Abhängigkeiten dann erst zur Laufzeit aufgelöst werden. Deshalb sollte sich die Anzahl der zusätzlich registrierten Test Doubles auf ein Minimum beschränken.</p>
@@ -150,7 +150,7 @@ writer.Write();</code></pre></div>
 <span class=tag><a href=https://g11s.cc/tags/unit-tests/>unit-tests</a></span>
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-949 Words
+950 Words
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
 2022-02-12 10:02
