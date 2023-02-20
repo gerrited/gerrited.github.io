@@ -760,13 +760,13 @@ Also&amp;hellip; Hello World! und Happy New Year!</description><content type="ht
   sizes="(min-width: 35em) 720px, 100vw"
   srcset='
   
-    /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_500x0_resize_q75_box.jpg 500w
+    /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_500x0_resize_q80_box.jpg 500w
   
   
-    , /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_800x0_resize_q75_box.jpg 800w
+    , /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_800x0_resize_q80_box.jpg 800w
   
   
-    , /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_1200x0_resize_q75_box.jpg 1200w
+    , /img/hello-world_hu17ba274651b40fa094abf0fcfe642d0a_463280_1200x0_resize_q80_box.jpg 1200w
   '
   
     src="/img/hello-world.jpg"
