@@ -1,4 +1,66 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on gerrit.codes</title><link>https://gerrit.codes/posts/</link><description>Recent content in Posts on gerrit.codes</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><copyright>&lt;a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0&lt;/a></copyright><lastBuildDate>Sun, 17 Sep 2023 11:19:05 +0200</lastBuildDate><atom:link href="https://gerrit.codes/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>CoreDNS meldet i/o timeout - Lösung 42</title><link>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</link><pubDate>Sun, 17 Sep 2023 11:19:05 +0200</pubDate><guid>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</guid><description>Seit Kurzem nutzt die Infrastruktur des Raspberry Pi Kubernetes Clusters den Travel Router SFT1200 von GL.iNET. Dieser kann Internetzugriff via LAN, WLAN, Tethering und USB Modem für andere Geräte via LAN und WLAN bereitstellen. Um den Ersatz der SD-Karten der bisherigen Geräte zu vereinfachen, habe ich im Router statische DHCP-Einträge für die MAC-Adressen hinterlegt. Dabei dachte ich, es gut wäre, wenn ich statt des Standardnetzes (Class C), mal etwas anderes nutze, damit ich die Netze intern gut unterscheiden kann.</description><content type="html"><![CDATA[<p>Seit Kurzem nutzt die Infrastruktur des <a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/">Raspberry Pi Kubernetes Clusters</a> den Travel Router SFT1200 von GL.iNET. Dieser kann Internetzugriff via LAN, WLAN, Tethering und USB Modem für andere Geräte via LAN und WLAN bereitstellen. Um den Ersatz der SD-Karten der bisherigen Geräte zu vereinfachen, habe ich im Router statische DHCP-Einträge für die MAC-Adressen hinterlegt. Dabei dachte ich, es gut wäre, wenn ich statt des Standardnetzes (Class C), mal etwas anderes nutze, damit ich die Netze intern gut unterscheiden kann. Ich habe mich für Class A (konkret 10.42.42.0/24) entschieden und die Konfiguration der Nodes entsprechend geändert.</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on gerrit.codes</title><link>https://gerrit.codes/posts/</link><description>Recent content in Posts on gerrit.codes</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><copyright>&lt;a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0&lt;/a></copyright><lastBuildDate>Tue, 03 Oct 2023 20:50:58 +0200</lastBuildDate><atom:link href="https://gerrit.codes/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Internet Monitoring (K8s+Grafana)</title><link>https://gerrit.codes/posts/2023/10/internet-monitoring-with-k8s-and-grafana/</link><pubDate>Tue, 03 Oct 2023 20:50:58 +0200</pubDate><guid>https://gerrit.codes/posts/2023/10/internet-monitoring-with-k8s-and-grafana/</guid><description>Motivation Nach dem Wechsel auf Glasfaser, hatte ich zwischendurch Ruckler beim Streaming. Das WLAN selbst war gut erreichbar. Das konnte ich mittels einer WLAN Analyzer App kontrollieren.
+Die Daten zur Internetnutzung waren nicht ausreichend, um dort ein Problem feststellen zu können. Entsprechend habe ich selbst an einer Lösung gearbeitet, um die Internetgeschwindigkeit regelmäßig zu messen und sie visuell aufzubereiten.
+Anforderungen Die Messung soll auf dem Raspberry Pi Kubernetes Cluster stattfinden, weil es 24/7 läuft.</description><content type="html"><![CDATA[<h2 id="motivation">Motivation</h2>
+<p>Nach dem Wechsel auf Glasfaser, hatte ich zwischendurch Ruckler beim Streaming. Das WLAN selbst war gut erreichbar. Das konnte ich mittels einer WLAN Analyzer App kontrollieren.</p>
+<p>Die Daten zur Internetnutzung waren nicht ausreichend, um dort ein Problem feststellen zu können. Entsprechend habe ich selbst an einer Lösung gearbeitet, um die Internetgeschwindigkeit regelmäßig zu messen und sie visuell aufzubereiten.</p>
+<h2 id="anforderungen">Anforderungen</h2>
+<ul>
+<li>Die Messung soll auf dem <a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/">Raspberry Pi Kubernetes Cluster</a> stattfinden, weil es 24/7 läuft.</li>
+<li>Für die Auswertung und Anzeige soll Grafana genutzt werden, weil ich damit bereits länger arbeite.</li>
+<li>Ich wollte mich nicht selbst um die dauerhafte Speicherung kümmern. Prima, dass die Grafana Cloud  einen umfangreichen Funktionsumfang kostenlos anbietet.</li>
+</ul>
+<h2 id="umsetzung">Umsetzung</h2>
+<p>Ich bin relativ schnell auf <a href="https://github.com/jeanralphaviles/prometheus_speedtest">prometheus_speedtest</a> gestoßen. Dabei handelt es sich um ein Python Package, welches Speedtest.net Ergebnisse als Prometheus Metrics Endpoints anbietet. Auch ein Container Image und passende K8s Manifests waren schon vorhanden.</p>
+<p>Die K8s Manifests wurden nahezu komplett übernommen und noch um einen Service hinzugefügt. Danach wurde das Deploy und die Konfiguration des <a href="https://grafana.com/docs/agent/latest/">Grafana Agents</a> durchgeführt. In der <a href="https://github.com/gerrited/internet-monitoring/blob/main/configmap.yaml">configmap.yaml</a> müssen die Daten der Grafana Cloud (URL, Username und Password) angepasst werden. Die Metriken werden fest von dem Kubernetes Service &ldquo;speedtest&rdquo; eingesammelt.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img
+  
+  
+  sizes="(min-width: 35em) 720px, 100vw"
+  srcset='
+  
+    /img/008-grafana_huc84f0fe9ccdbb1feff626997a96b07f6_312877_500x0_resize_box_3.png 500w
+  
+  
+    , /img/008-grafana_huc84f0fe9ccdbb1feff626997a96b07f6_312877_800x0_resize_box_3.png 800w
+  
+  
+    , /img/008-grafana_huc84f0fe9ccdbb1feff626997a96b07f6_312877_1200x0_resize_box_3.png 1200w
+  '
+  
+    src="/img/008-grafana.png"
+  
+  alt="">
+
+
+<p>Die Daten werden in einem Grafana Dashboard angezeigt.</p>
+<h2 id="weiteres">Weiteres</h2>
+<p>In dem GitHub Repository <a href="https://github.com/gerrited/internet-monitoring">internet-monitoring</a> habe ich alle benötigten K8s Manifests und die Konfiguration des Grafana Agents und Dashboards als Vorlage veröffentlicht.</p>
+]]></content></item><item><title>CoreDNS meldet i/o timeout - Lösung 42</title><link>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</link><pubDate>Sun, 17 Sep 2023 11:19:05 +0200</pubDate><guid>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</guid><description>Seit Kurzem nutzt die Infrastruktur des Raspberry Pi Kubernetes Clusters den Travel Router SFT1200 von GL.iNET. Dieser kann Internetzugriff via LAN, WLAN, Tethering und USB Modem für andere Geräte via LAN und WLAN bereitstellen. Um den Ersatz der SD-Karten der bisherigen Geräte zu vereinfachen, habe ich im Router statische DHCP-Einträge für die MAC-Adressen hinterlegt. Dabei dachte ich, es gut wäre, wenn ich statt des Standardnetzes (Class C), mal etwas anderes nutze, damit ich die Netze intern gut unterscheiden kann.</description><content type="html"><![CDATA[<p>Seit Kurzem nutzt die Infrastruktur des <a href="/posts/2022/01/raspberry-pi-cluster-mit-k3s/">Raspberry Pi Kubernetes Clusters</a> den Travel Router SFT1200 von GL.iNET. Dieser kann Internetzugriff via LAN, WLAN, Tethering und USB Modem für andere Geräte via LAN und WLAN bereitstellen. Um den Ersatz der SD-Karten der bisherigen Geräte zu vereinfachen, habe ich im Router statische DHCP-Einträge für die MAC-Adressen hinterlegt. Dabei dachte ich, es gut wäre, wenn ich statt des Standardnetzes (Class C), mal etwas anderes nutze, damit ich die Netze intern gut unterscheiden kann. Ich habe mich für Class A (konkret 10.42.42.0/24) entschieden und die Konfiguration der Nodes entsprechend geändert.</p>
 <p>Allerdings traten im Anschluss seltsame Fehler auf. Beispielsweise konnte der Cloudflare Tunnel (siehe <a href="/posts/2022/01/k8s-tunnel-cloudflare/">Lokales Kubernetes im Internet verfügbar</a>) keine Verbindung zum Internet mehr herstellen. Die Fehlermeldung half mir nicht direkt weiter und auch im Netz gab es im Kontext von <a href="https://github.com/cloudflare/cloudflared">cloudflared</a> (die für den Tunnel genutzte Software) keine Lösung.</p>
 <p>Allerdings zeigte auch CoreDNS Probleme an, weshalb ich dort in die Logs schaute und folgendes fand:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>read udp 10.42.12.34:49738-&gt;10.42.42.1:53: i/o timeout
