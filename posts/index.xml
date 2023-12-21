@@ -404,7 +404,7 @@ Vorbereitung In dem Video ist der Controller bereits eingerichtet.</description>
 <p>Durch <a href="https://github.com/gerrited/blinkt-k8s-controller">blinkt-controller</a> wird ein <a href="https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/">Daemonset</a> erstellt, welches auf die Labels <code>blinkt</code> und <code>blinktColor</code> von Pods reagiert. Damit die LEDs angesteuert werden können, laufen die Pods als cluster-admin. Weiteres unter <a href="https://github.com/gerrited/blinkt-k8s-controller#how-it-works">&ldquo;How it works&rdquo;</a> auf GitHub.</p>
 <h2 id="vorbereitung">Vorbereitung</h2>
 <p>In dem Video ist der Controller bereits eingerichtet. Zusätzlich verwende ich diese beiden Manifests:</p>
-<script type="application/javascript" src="https://gist.github.com/gerrited/c9691d8dc4be346038c5f4908a9a2adf.js"></script>
+<script src="https://gist.github.com/gerrited/c9691d8dc4be346038c5f4908a9a2adf.js"></script>
 
 <h2 id="ablauf">Ablauf</h2>
 <h3 id="deploy">Deploy</h3>
