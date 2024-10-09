@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>First-Post on gerrit.codes</title><link>https://gerrit.codes/tags/first-post/</link><description>Recent content in First-Post on gerrit.codes</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Sat, 01 Jan 2022 14:00:00 +0100</lastBuildDate><atom:link href="https://gerrit.codes/tags/first-post/index.xml" rel="self" type="application/rss+xml"/><item><title>Happy New Year and Hello World!</title><link>https://gerrit.codes/posts/2022/01/happy-new-year-and-hello-world/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://gerrit.codes/posts/2022/01/happy-new-year-and-hello-world/</guid><description>Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.
-Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach auch zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Irgendwie auch passend.
-Also&amp;hellip; Hello World! und Happy New Year!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>First-Post on gerrit.codes</title><link>https://gerrit.codes/tags/first-post/</link><description>Recent content in First-Post on gerrit.codes</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Sat, 01 Jan 2022 14:00:00 +0100</lastBuildDate><atom:link href="https://gerrit.codes/tags/first-post/index.xml" rel="self" type="application/rss+xml"/><item><title>Happy New Year and Hello World!</title><link>https://gerrit.codes/posts/2022/01/happy-new-year-and-hello-world/</link><pubDate>Sat, 01 Jan 2022 14:00:00 +0100</pubDate><guid>https://gerrit.codes/posts/2022/01/happy-new-year-and-hello-world/</guid><description>&lt;p>
+&lt;img
+style='width: 12em; float:right'
+sizes="(min-width: 35em) 720px, 100vw"
+srcset='
+/img/hello-world_hu4959803478289390969.jpg 500w
+, /img/hello-world_hu17587583509987323130.jpg 800w
+, /img/hello-world_hu7659904935582682163.jpg 1200w
+'
+src="https://gerrit.codes/img/hello-world.jpg"
+alt="">
+Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Projekte schreiben und es damit meinem zukünftigen Ich einfacher machen, sie wieder zu verstehen.&lt;/p>
+&lt;p>Da es beim Jahreswechsel 2021/2022 weder (meiner Meinung nach auch zum Glück) ausartende Feuerwerke noch eine große Feier gab, muss ein Foto vom neuen Macbook Pro 2021, welches das Macbook Air 2013 abgelöst hat, als Ersatz herhalten. Irgendwie auch passend.&lt;/p></description></item></channel></rss>
