@@ -2,9 +2,9 @@
 &lt;img
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/hugo-website_hu15766528688600786367.png 500w
-, /img/hugo-website_hu16415905539642139967.png 800w
-, /img/hugo-website_hu4492444193662151785.png 1200w
+/img/hugo-website_hu_b04838801e48b5f.png 500w
+, /img/hugo-website_hu_e39090f6c47a65fd.png 800w
+, /img/hugo-website_hu_3ef9f0b86a2f1f35.png 1200w
 '
 src="https://gerrit.codes/img/hugo-website.png"
 alt="">

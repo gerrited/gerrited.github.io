@@ -11,9 +11,9 @@
 &lt;p>Ich bin relativ schnell auf &lt;a href="https://github.com/jeanralphaviles/prometheus_speedtest">prometheus_speedtest&lt;/a> gestoßen. Dabei handelt es sich um ein Python Package, welches Speedtest.net Ergebnisse als Prometheus Metrics Endpoints anbietet. Auch ein Container Image und passende K8s Manifests waren schon vorhanden.&lt;/p></description></item><item><title>CoreDNS meldet i/o timeout - Lösung 42</title><link>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</link><pubDate>Sun, 17 Sep 2023 11:19:05 +0200</pubDate><guid>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</guid><description>&lt;p>Seit Kurzem nutzt die Infrastruktur des &lt;a href="https://gerrit.codes/posts/2022/01/raspberry-pi-cluster-mit-k3s/">Raspberry Pi Kubernetes Clusters&lt;/a> den Travel Router SFT1200 von GL.iNET. Dieser kann Internetzugriff via LAN, WLAN, Tethering und USB Modem für andere Geräte via LAN und WLAN bereitstellen. Um den Ersatz der SD-Karten der bisherigen Geräte zu vereinfachen, habe ich im Router statische DHCP-Einträge für die MAC-Adressen hinterlegt. Dabei dachte ich, es gut wäre, wenn ich statt des Standardnetzes (Class C), mal etwas anderes nutze, damit ich die Netze intern gut unterscheiden kann. Ich habe mich für Class A (konkret 10.42.42.0/24) entschieden und die Konfiguration der Nodes entsprechend geändert.&lt;/p></description></item><item><title>Lokales K8s mit Cloudflare Tunnel im Internet verfügbar</title><link>https://gerrit.codes/posts/2022/01/k8s-tunnel-cloudflare/</link><pubDate>Sun, 30 Jan 2022 15:24:11 +0100</pubDate><guid>https://gerrit.codes/posts/2022/01/k8s-tunnel-cloudflare/</guid><description>&lt;img
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/k3s-cloudflared_hu4700487157590287570.png 500w
-, /img/k3s-cloudflared_hu11318030510492112810.png 800w
-, /img/k3s-cloudflared_hu940242105855685870.png 1200w
+/img/k3s-cloudflared_hu_e3741c089761116a.png 500w
+, /img/k3s-cloudflared_hu_2844a79b78f0f86b.png 800w
+, /img/k3s-cloudflared_hu_10a4e3b25295268c.png 1200w
 '
 src="https://gerrit.codes/img/k3s-cloudflared.png"
 alt="">

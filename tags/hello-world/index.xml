@@ -3,9 +3,9 @@
 style='width: 12em; float:right'
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/hello-world_hu4959803478289390969.jpg 500w
-, /img/hello-world_hu17587583509987323130.jpg 800w
-, /img/hello-world_hu7659904935582682163.jpg 1200w
+/img/hello-world_hu_bf3c836c2bab03d0.jpg 500w
+, /img/hello-world_hu_5d6de937219bd2c5.jpg 800w
+, /img/hello-world_hu_bb013397e04b9b83.jpg 1200w
 '
 src="https://gerrit.codes/img/hello-world.jpg"
 alt="">

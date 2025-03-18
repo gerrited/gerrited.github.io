@@ -19,9 +19,9 @@
 &lt;p>Ich bin relativ schnell auf &lt;a href="https://github.com/jeanralphaviles/prometheus_speedtest">prometheus_speedtest&lt;/a> gestoßen. Dabei handelt es sich um ein Python Package, welches Speedtest.net Ergebnisse als Prometheus Metrics Endpoints anbietet. Auch ein Container Image und passende K8s Manifests waren schon vorhanden.&lt;/p></description></item><item><title>CoreDNS meldet i/o timeout - Lösung 42</title><link>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</link><pubDate>Sun, 17 Sep 2023 11:19:05 +0200</pubDate><guid>https://gerrit.codes/posts/2023/09/kubernetes-coredns-io-timeout/</guid><description>&lt;p>Seit Kurzem nutzt die Infrastruktur des &lt;a href="https://gerrit.codes/posts/2022/01/raspberry-pi-cluster-mit-k3s/">Raspberry Pi Kubernetes Clusters&lt;/a> den Travel Router SFT1200 von GL.iNET. Dieser kann Internetzugriff via LAN, WLAN, Tethering und USB Modem für andere Geräte via LAN und WLAN bereitstellen. Um den Ersatz der SD-Karten der bisherigen Geräte zu vereinfachen, habe ich im Router statische DHCP-Einträge für die MAC-Adressen hinterlegt. Dabei dachte ich, es gut wäre, wenn ich statt des Standardnetzes (Class C), mal etwas anderes nutze, damit ich die Netze intern gut unterscheiden kann. Ich habe mich für Class A (konkret 10.42.42.0/24) entschieden und die Konfiguration der Nodes entsprechend geändert.&lt;/p></description></item><item><title>Unit-Tests für IoC Container</title><link>https://gerrit.codes/posts/2022/02/unit-tests-fuer-ioc-container/</link><pubDate>Sat, 12 Feb 2022 11:02:32 +0100</pubDate><guid>https://gerrit.codes/posts/2022/02/unit-tests-fuer-ioc-container/</guid><description>&lt;img
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/006-title_hu410616865176714455.png 500w
-, /img/006-title_hu14860504790620854606.png 800w
-, /img/006-title_hu9920598084828111685.png 1200w
+/img/006-title_hu_ff155901478e57b1.png 500w
+, /img/006-title_hu_639975c267a36b3.png 800w
+, /img/006-title_hu_831af1fe235f4b8e.png 1200w
 '
 src="https://gerrit.codes/img/006-title.png"
 alt="">
@@ -29,9 +29,9 @@ alt="">
 &lt;p>Wenn für eine Anwendung &lt;a href="https://martinfowler.com/articles/injection.html">Dependency Injection&lt;/a> (DI) genutzt wird und ein Inversion of Control (IoC) Container wie Autofac zum Einsatz kommt, kann es schnell passieren, dass nicht alle benötigten Komponenten registriert werden. Die Abhängigkeiten einer Klasse werden z.B. als Interface in den Constructor injiziert und fortan genutzt. Während der Entwicklung fällt dann nicht auf, dass die Abhängigkeit nicht aufgelöst werden kann, aber sobald die Anwendung gestartet und genutzt wird, kommt es zu Fehlermeldungen, die oft zum Absturz der Anwendung führen.&lt;/p></description></item><item><title>Lokales K8s mit Cloudflare Tunnel im Internet verfügbar</title><link>https://gerrit.codes/posts/2022/01/k8s-tunnel-cloudflare/</link><pubDate>Sun, 30 Jan 2022 15:24:11 +0100</pubDate><guid>https://gerrit.codes/posts/2022/01/k8s-tunnel-cloudflare/</guid><description>&lt;img
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/k3s-cloudflared_hu4700487157590287570.png 500w
-, /img/k3s-cloudflared_hu11318030510492112810.png 800w
-, /img/k3s-cloudflared_hu940242105855685870.png 1200w
+/img/k3s-cloudflared_hu_e3741c089761116a.png 500w
+, /img/k3s-cloudflared_hu_2844a79b78f0f86b.png 800w
+, /img/k3s-cloudflared_hu_10a4e3b25295268c.png 1200w
 '
 src="https://gerrit.codes/img/k3s-cloudflared.png"
 alt="">
@@ -42,9 +42,9 @@ alt="">
 &lt;img
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/hugo-website_hu15766528688600786367.png 500w
-, /img/hugo-website_hu16415905539642139967.png 800w
-, /img/hugo-website_hu4492444193662151785.png 1200w
+/img/hugo-website_hu_b04838801e48b5f.png 500w
+, /img/hugo-website_hu_e39090f6c47a65fd.png 800w
+, /img/hugo-website_hu_3ef9f0b86a2f1f35.png 1200w
 '
 src="https://gerrit.codes/img/hugo-website.png"
 alt="">
@@ -71,9 +71,9 @@ alt="">
 style='width: 12em; float:right'
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/hello-world_hu4959803478289390969.jpg 500w
-, /img/hello-world_hu17587583509987323130.jpg 800w
-, /img/hello-world_hu7659904935582682163.jpg 1200w
+/img/hello-world_hu_bf3c836c2bab03d0.jpg 500w
+, /img/hello-world_hu_5d6de937219bd2c5.jpg 800w
+, /img/hello-world_hu_bb013397e04b9b83.jpg 1200w
 '
 src="https://gerrit.codes/img/hello-world.jpg"
 alt="">
@@ -82,12 +82,12 @@ Pünktlich zum Jahreswechsel startet dieses Blog. Hier will ich über kleine Pro
 style='float: right; border-radius: 10em; margin: 1em; width: 10em;'
 sizes="(min-width: 35em) 720px, 100vw"
 srcset='
-/img/portrait_hu4926941568515797863.jpg 500w
-, /img/portrait_hu8495131383580967562.jpg 800w
-, /img/portrait_hu836523063750575047.jpg 1200w
+/img/portrait_hu_1d2c3c515bdc3b77.jpg 500w
+, /img/portrait_hu_c683d70aa1f06153.jpg 800w
+, /img/portrait_hu_cf5c75a3aed281ab.jpg 1200w
 '
 src="https://gerrit.codes/img/portrait.jpg"
 alt="Gerrit Edzards">
 &lt;h3 id="moin">Moin!&lt;/h3>
 &lt;p>Mein Name ist Gerrit und ich lebe in Oldenburg. Seit über 10 Jahren entwickle ich Software mit .NET und beschäftige mich aktuell vor allem mit Kubernetes und Azure.&lt;/p>
-&lt;p>Beruflich arbeite ich überwiegend unter Windows und privat nutze ich meistens ein MacBook. Neben Azure DevOps und Jenkins Pipelines, administriere ich auch weitere Systeme (z.B. icinga, Grafana und SonarQube) und habe dadurch auch regelmäßig Kontakt mit Linux und VMware. Für die Systemwartung setze ich gerne Tools wie ansible und terraform ein.&lt;/p></description></item></channel></rss>
+&lt;p>Beruflich arbeite ich überwiegend unter Windows und privat nutze ich meistens einen MacBook. Neben Azure DevOps und Jenkins Pipelines, administriere ich auch weitere Systeme (z.B. icinga, Grafana und SonarQube) und habe dadurch auch regelmäßig Kontakt mit Linux, Docker und VMware. Für die Systemwartung setze ich gerne Tools wie ansible und terraform ein.&lt;/p></description></item></channel></rss>
